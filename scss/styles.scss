@@ -1,0 +1,576 @@
+$cLetra:#3d3f3ff3;
+$cInput: #555757f3;;
+$bGris:rgb(231, 233, 235);
+$bWhite:rgb(252, 250, 250);
+@mixin textDesc ($font-family,$color,$font-size,$width,$text-align,$letter-spacing,$word-spacing,$line-heigth,$margin-top,$margin-bottom,$margin-left,$margin-right) {
+    font-family: $font-family;
+    color:$color;
+    font-size: $font-size;
+    width:$width;
+    text-align: $text-align;
+    letter-spacing: $letter-spacing;
+    word-spacing: $word-spacing;
+    line-height: $line-heigth;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+}
+@mixin imagCentrada ($width,$height,$margin-top,$margin-bottom,$border-style){
+    width: $width;
+    height: $height;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    border-style: $border-style;
+}
+@mixin encabezados ($font-family,$color,$font-size,$margin-top,$margin-bottom,$letter-spacing) {
+    font-family: $font-family;
+    color: $color;
+    font-size: $font-size;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    letter-spacing: $letter-spacing;
+}
+@mixin logs ($opacity,$border-bottom-style,$width) {
+    opacity:$opacity;
+    border-bottom-style: $border-bottom-style;
+    width: $width;
+}
+* {
+    margin:0;
+    padding:0;
+} 
+a:link,
+a:visited,
+a:active {
+   text-decoration: none;
+   color:$cLetra;
+}
+ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+.menu {
+    background-color:$bWhite;
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        list-style-type: none;
+        color: $cLetra;
+        font-family: 'Balthazar', serif;
+        font-size: 25px;
+        letter-spacing: 1px;
+        li {
+            display:inline-block;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            padding: 5px;
+        }  
+        li:hover .subm {
+            display: block;
+            position: absolute;
+            background-color: $bWhite;
+            z-index: 10;
+            border-style: dotted;
+        } 
+    }
+    .subm {
+    display: none;
+    }
+}
+.subm {
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    justify-content: space-evenly;
+    li {
+    padding-top: 1px;
+    }
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: $bWhite;
+    li a {
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+    .navbar-nav--menuOpciones {
+        transition: transform .3s; 
+    }
+    .navbar-nav--menuOpciones:hover{
+        transform: scale(1.2); 
+    }
+    .navbar-nav--subMenu:hover {
+        background-size: auto;
+    }
+}
+.log {
+    font-family: 'Cinzel Decorative', cursive;
+    color:$cLetra;
+    font-size: 40px;
+    display:inline;
+    letter-spacing: 6px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+body {
+    background-color:$bWhite;
+}
+video {
+    width: 100%;
+    height: 50%;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom:100px;
+    background-size: cover;
+    opacity: 50%;
+}
+.cuento {
+    @include textDesc ('Balthazar',$cLetra,20px,60%,center,2px,2px,30px,40px,100px,auto,auto);
+    display: block;
+    .cuento__foto {
+        @include imagCentrada (800px,500px,100px,30px,groove);
+    }
+}
+.stock {
+    background-color: $bGris;
+    background-image: linear-gradient(to bottom, $bGris, $bWhite);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    color:$cLetra;
+    font-family: 'Balthazar', serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    grid-template-areas:"stock__productos1 stock__productos2 stock__productos3 stock__productos4"
+                        "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
+    .stock--productosFotos {
+        transition: transform .5s; 
+    }
+    .stock--productosFotos:hover {
+        transform: scale(1.2); 
+    }
+    .stock__productos1 { 
+        grid-area: stock__productos1; 
+    }
+    .stock__productos2 { 
+        grid-area: stock__productos2; 
+    }
+    .stock__productos3 { 
+        grid-area: stock__productos3; 
+    }
+    .stock__productos4 { 
+        grid-area: stock__productos4; 
+    }
+    .stock__productos5 { 
+        grid-area: stock__productos5; 
+    }
+    .stock__productos6 { 
+        grid-area: stock__productos6; 
+    }
+    .stock__productos7 { 
+        grid-area: stock__productos7; 
+    }
+    .stock__productos8 { 
+        grid-area: stock__productos8; 
+    }
+    .stock--productosFotos {
+        margin-top: 60px;
+        margin-right: 20px;
+        margin-left: 30px;
+        margin-bottom:20px;
+        width: 300px;
+        height: 250px;
+        border-style: groove;
+    }
+}
+.encabezadoChango {
+    .encabezadoChango__titulo {
+        @include encabezados('Balthazar',$cLetra,30px,5px,5px,3px);
+    }
+    .encabezadoChango__chango {
+        margin-top: 80px;
+        margin-bottom: 5px;
+        width:15%;
+        opacity: 25%;
+        border-radius: 30px;
+    }
+}
+.pedidosOnline {
+    font-family: 'Balthazar', serif;
+    color: $cLetra;
+    font-size: 20px;
+    margin-top:40px;
+    margin-bottom: 100px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.short {
+    width: 40px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.formularioCentrado {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    line-height: 30px;
+}
+.formularioContacto {
+    @extend .formularioCentrado;
+    @extend .containerGral;
+}
+.bottCompra {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 90px;
+    height: 60px;
+}
+.compraSi {
+    @extend .bottCompra;
+    background-color: rgb(246, 250, 243);
+}
+.compraNo {
+    @extend .bottCompra;
+    background-color: rgb(252, 247, 247);
+}
+.carrito {
+    @include logs (70%,hidden,60%);
+}
+label {
+    color: $cLetra;
+    font-family: 'Balthazar', serif;
+    font-size: 15px;
+}
+table {
+    font-family: 'Balthazar', serif;
+    color: $cLetra;
+    font-size: 20px;
+    table-layout: auto;
+    width:50%;
+    margin-top:150px;
+    margin-bottom: 400px;
+    text-align: center;
+    border: 0px;
+    line-height: 40px;
+    .table--stars {
+        width: 40%;
+        opacity: 70%;
+        border-radius: 5px;
+    }
+}
+.animate__jackInTheBox {
+    animation-duration: 2s;
+    animation-name: animate__jackInTheBox;
+}
+@keyframes animate__jackInTheBox {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+.tituloContacto {
+    @include encabezados('Balthazar',$cLetra,30px,30px,5px,3px);
+}
+.encabezados {
+    @include encabezados('Balthazar',$cLetra,30px,50px,1px,3px);
+    text-align: center;
+}
+input {
+    color: $cInput;
+    font-family: 'Balthazar', serif;
+    font-size: 15px;
+    word-spacing: 1px;
+    width: 100px;
+}
+input {
+    transition: all 2s;       
+}
+input:focus {
+    font-size: 25px;
+} 
+.other {
+    color: $cInput;
+    width:200px;
+}
+.redes {
+    .redes--red {
+        @include logs (10%,hidden,5%)
+        margin-bottom:80px;
+    }
+}
+.containerGral {
+    background-color: $bGris;
+    background-image: linear-gradient(to bottom, $bGris, $bWhite);
+    width: 100%;
+}
+.carousel-control-prev-icon {
+    background-color: rgba(95, 94, 90, 0.205);
+    padding: 1px;
+}
+.carousel-control-next-icon {
+    background-color: rgba(95, 94, 90, 0.205);
+    padding: 1px;
+}
+.carousel-item__fotoCar {
+    @include imagCentrada(800px,500px,100px,30px,groove);
+    margin-left: 20%;
+}
+.textCar {
+    @include textDesc ('Balthazar',$cLetra,20px,60%,center,2px,2px,30px,40px,100px,20%,20%);
+}
+footer {
+    color: $cLetra;
+    font-family: 'Balthazar', serif;
+    letter-spacing: 3px;
+    align-self: center;
+    display: inline;
+    text-align: center;
+}
+@media screen and (max-width: 812px) {
+    .stock {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 3px;
+        grid-template-areas:"stock__productos1 stock__productos2 stock__productos3 stock__productos4"    
+                            "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
+        background-color:whitesmoke;
+        .stock--productosFotos {
+            width: 150px;
+            height: 100px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+    .menu {
+        nav {
+            ul {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        font-size: 20px;
+            }
+        }
+    }
+    .encabezados {
+        font-size: 20px;
+    }
+    h2,
+    p {
+        font-size: 14px;
+    }
+    .log {
+        font-size: 35px;
+        padding:2px;
+    }
+    .cuento {
+        .cuento__foto {
+            width: 360px;
+            height: 300px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        p {
+            font-size: 16px;
+        }
+        width: 90%;
+    }
+    .carousel-item__fotoCar {
+        width: 400px;
+        height: 300px;
+        margin-left: 12%;
+        margin-right: 10%;
+    }
+    .textCar {
+        p {
+            font-size: 16px;
+        }
+        width: 90%;
+        margin-left: 8%;
+    }
+    .tituloContacto,
+    .encabezadoChango__titulo {
+        color:$bGris;
+        font-family: 'Balthazar', serif;
+        font-size: 22px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        letter-spacing: 3px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .stock {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 3px;
+        grid-template-areas:"stock__productos1 stock__productos2"    
+                            "stock__productos3 stock__productos4"
+                            "stock__productos5 stock__productos6"
+                            "stock__productos7 stock__productos8";
+        background-color:whitesmoke;
+        .stock--productosFotos {
+            width: 130px;
+            height: 90px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+    .menu {
+        nav {
+            ul {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        font-size: 18px;
+            }
+        }
+    }
+    .encabezados {
+        font-size: 16px;
+    }
+    h2,
+    p {
+        font-size: 11px;
+    }
+    .log {
+        font-size: 30px;
+        padding: 2px;
+    }
+    .cuento {
+        .cuento__foto {
+        width: 180px;
+        height: 110px;
+        margin-left: 5%;
+        margin-right: 5%;
+        }
+        p {
+            font-size: 14px;
+        }
+        width: 90%;
+    }
+    .textCar {
+        width: 90%;
+        p {
+            font-size: 14px;
+        }
+    }
+    .carousel-item__fotoCar {
+        width: 180px;
+        height: 110px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .tituloContacto,
+    .encabezadoChango__titulo {
+        color:$cLetra;
+        font-family: 'Balthazar', serif;
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        letter-spacing: 3px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .stock {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 3px;
+        grid-template-areas:"stock__productos1 stock__productos2"    
+                            "stock__productos3 stock__productos4"
+                            "stock__productos5 stock__productos6"
+                            "stock__productos7 stock__productos8";
+        background-color:whitesmoke;
+        .stock--productosFotos {
+            width: 100px;
+            height: 80px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+    .encabezados {
+        font-size: 14px;
+    }
+    h2,
+    p {
+        font-size: 8px;
+    }
+    th,
+    td {
+        font-size: 10px;
+    }
+    .menu {
+        nav {
+            ul {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        font-size: 15px;
+            }
+        }
+    }
+    .log {
+        font-size: 25px;
+        padding: 2px;
+    }
+    .cuento {
+        .cuento__foto {
+        width: 220px;
+        height: 150px;
+        margin: 10%;
+        }
+        p {
+            font-size: 12px;
+        }
+        width: 90%;
+    }
+    .textCar {
+        width: 90%;
+        p {
+            font-size: 12px;
+        }
+    }
+    .carousel-item__fotoCar {
+        width: 220px;
+        height: 150px;
+        margin: 10%;
+    }
+    .tituloContacto,
+    .encabezadoChango__titulo {
+        color:$cLetra;
+        font-family: 'Balthazar', serif;
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        letter-spacing: 3px;
+    }
+}

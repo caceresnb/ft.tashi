@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #3d3f3ff3; }
+
+ul li {
+  list-style-type: none;
+  text-decoration: none; }
+
+.menu {
+  background-color: #fcfafa; }
+  .menu nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    list-style-type: none;
+    color: #3d3f3ff3;
+    font-family: 'Balthazar', serif;
+    font-size: 25px;
+    letter-spacing: 1px; }
+    .menu nav ul li {
+      display: inline-block;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      padding: 5px; }
+    .menu nav ul li:hover .subm {
+      display: block;
+      position: absolute;
+      background-color: #fcfafa;
+      z-index: 10;
+      border-style: dotted; }
+  .menu .subm {
+    display: none; }
+
+.subm {
+  display: flex;
+  flex-flow: column wrap;
+  position: absolute;
+  justify-content: space-evenly; }
+  .subm li {
+    padding-top: 1px; }
+
+.navbar-nav {
+  float: left;
+  margin: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fcfafa; }
+  .navbar-nav li a {
+    margin-left: 20px;
+    margin-right: 20px; }
+  .navbar-nav .navbar-nav--menuOpciones {
+    transition: transform .3s; }
+  .navbar-nav .navbar-nav--menuOpciones:hover {
+    transform: scale(1.2); }
+  .navbar-nav .navbar-nav--subMenu:hover {
+    background-size: auto; }
+
+.log {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #3d3f3ff3;
+  font-size: 40px;
+  display: inline;
+  letter-spacing: 6px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px; }
+
+body {
+  background-color: #fcfafa; }
+
+video {
+  width: 100%;
+  height: 50%;
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-bottom: 100px;
+  background-size: cover;
+  opacity: 50%; }
+
+.cuento {
+  font-family: "Balthazar";
+  color: #3d3f3ff3;
+  font-size: 20px;
+  width: 60%;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 30px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+  .cuento .cuento__foto {
+    width: 800px;
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border-style: groove; }
+
+.stock {
+  background-color: #e7e9eb;
+  background-image: linear-gradient(to bottom, #e7e9eb, #fcfafa);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 10px;
+  color: #3d3f3ff3;
+  font-family: 'Balthazar', serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4" "stock__productos5 stock__productos6 stock__productos7 stock__productos8"; }
+  .stock .stock--productosFotos {
+    transition: transform .5s; }
+  .stock .stock--productosFotos:hover {
+    transform: scale(1.2); }
+  .stock .stock__productos1 {
+    grid-area: stock__productos1; }
+  .stock .stock__productos2 {
+    grid-area: stock__productos2; }
+  .stock .stock__productos3 {
+    grid-area: stock__productos3; }
+  .stock .stock__productos4 {
+    grid-area: stock__productos4; }
+  .stock .stock__productos5 {
+    grid-area: stock__productos5; }
+  .stock .stock__productos6 {
+    grid-area: stock__productos6; }
+  .stock .stock__productos7 {
+    grid-area: stock__productos7; }
+  .stock .stock__productos8 {
+    grid-area: stock__productos8; }
+  .stock .stock--productosFotos {
+    margin-top: 60px;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 250px;
+    border-style: groove; }
+
+.encabezadoChango .encabezadoChango__titulo {
+  font-family: "Balthazar";
+  color: #3d3f3ff3;
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  letter-spacing: 3px; }
+
+.encabezadoChango .encabezadoChango__chango {
+  margin-top: 80px;
+  margin-bottom: 5px;
+  width: 15%;
+  opacity: 25%;
+  border-radius: 30px; }
+
+.pedidosOnline {
+  font-family: 'Balthazar', serif;
+  color: #3d3f3ff3;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  word-spacing: 2px; }
+
+.short {
+  width: 40px;
+  margin-left: 2px;
+  margin-right: 2px; }
+
+.formularioCentrado, .formularioContacto {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  line-height: 30px; }
+
+.bottCompra, .compraSi, .compraNo {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 90px;
+  height: 60px; }
+
+.compraSi {
+  background-color: #f6faf3; }
+
+.compraNo {
+  background-color: #fcf7f7; }
+
+.carrito {
+  opacity: 70%;
+  border-bottom-style: hidden;
+  width: 60%; }
+
+label {
+  color: #3d3f3ff3;
+  font-family: 'Balthazar', serif;
+  font-size: 15px; }
+
+table {
+  font-family: 'Balthazar', serif;
+  color: #3d3f3ff3;
+  font-size: 20px;
+  table-layout: auto;
+  width: 50%;
+  margin-top: 150px;
+  margin-bottom: 400px;
+  text-align: center;
+  border: 0px;
+  line-height: 40px; }
+  table .table--stars {
+    width: 40%;
+    opacity: 70%;
+    border-radius: 5px; }
+
+.animate__jackInTheBox {
+  animation-duration: 2s;
+  animation-name: animate__jackInTheBox; }
+
+@keyframes animate__jackInTheBox {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+.tituloContacto {
+  font-family: "Balthazar";
+  color: #3d3f3ff3;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  letter-spacing: 3px; }
+
+.encabezados {
+  font-family: "Balthazar";
+  color: #3d3f3ff3;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 1px;
+  letter-spacing: 3px;
+  text-align: center; }
+
+input {
+  color: #555757f3;
+  font-family: 'Balthazar', serif;
+  font-size: 15px;
+  word-spacing: 1px;
+  width: 100px; }
+
+input {
+  transition: all 2s; }
+
+input:focus {
+  font-size: 25px; }
+
+.other {
+  color: #555757f3;
+  width: 200px; }
+
+.redes .redes--red {
+  opacity: 10%;
+  border-bottom-style: hidden;
+  width: 5%;
+  margin-bottom: 80px; }
+
+.containerGral, .formularioContacto {
+  background-color: #e7e9eb;
+  background-image: linear-gradient(to bottom, #e7e9eb, #fcfafa);
+  width: 100%; }
+
+.carousel-control-prev-icon {
+  background-color: rgba(95, 94, 90, 0.205);
+  padding: 1px; }
+
+.carousel-control-next-icon {
+  background-color: rgba(95, 94, 90, 0.205);
+  padding: 1px; }
+
+.carousel-item__fotoCar {
+  width: 800px;
+  height: 500px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  border-style: groove;
+  margin-left: 20%; }
+
+.textCar {
+  font-family: "Balthazar";
+  color: #3d3f3ff3;
+  font-size: 20px;
+  width: 60%;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 30px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  margin-left: 20%;
+  margin-right: 20%; }
+
+footer {
+  color: #3d3f3ff3;
+  font-family: 'Balthazar', serif;
+  letter-spacing: 3px;
+  align-self: center;
+  display: inline;
+  text-align: center; }
+
+@media screen and (max-width: 812px) {
+  .stock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 3px;
+    grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4"     "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
+    background-color: whitesmoke; }
+    .stock .stock--productosFotos {
+      width: 150px;
+      height: 100px;
+      margin-left: 5%;
+      margin-right: 5%; }
+  .menu nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    font-size: 20px; }
+  .encabezados {
+    font-size: 20px; }
+  h2,
+  p {
+    font-size: 14px; }
+  .log {
+    font-size: 35px;
+    padding: 2px; }
+  .cuento {
+    width: 90%; }
+    .cuento .cuento__foto {
+      width: 360px;
+      height: 300px;
+      margin-left: 10%;
+      margin-right: 10%; }
+    .cuento p {
+      font-size: 16px; }
+  .carousel-item__fotoCar {
+    width: 400px;
+    height: 300px;
+    margin-left: 12%;
+    margin-right: 10%; }
+  .textCar {
+    width: 90%;
+    margin-left: 8%; }
+    .textCar p {
+      font-size: 16px; }
+  .tituloContacto,
+  .encabezadoChango__titulo {
+    color: #e7e9eb;
+    font-family: 'Balthazar', serif;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 3px; } }
+
+@media screen and (max-width: 480px) {
+  .stock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 3px;
+    grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4" "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
+    background-color: whitesmoke; }
+    .stock .stock--productosFotos {
+      width: 130px;
+      height: 90px;
+      margin-left: 5%;
+      margin-right: 5%; }
+  .menu nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    font-size: 18px; }
+  .encabezados {
+    font-size: 16px; }
+  h2,
+  p {
+    font-size: 11px; }
+  .log {
+    font-size: 30px;
+    padding: 2px; }
+  .cuento {
+    width: 90%; }
+    .cuento .cuento__foto {
+      width: 180px;
+      height: 110px;
+      margin-left: 5%;
+      margin-right: 5%; }
+    .cuento p {
+      font-size: 14px; }
+  .textCar {
+    width: 90%; }
+    .textCar p {
+      font-size: 14px; }
+  .carousel-item__fotoCar {
+    width: 180px;
+    height: 110px;
+    margin-left: 5%;
+    margin-right: 5%; }
+  .tituloContacto,
+  .encabezadoChango__titulo {
+    color: #3d3f3ff3;
+    font-family: 'Balthazar', serif;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 3px; } }
+
+@media screen and (max-width: 320px) {
+  .stock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 3px;
+    grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4" "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
+    background-color: whitesmoke; }
+    .stock .stock--productosFotos {
+      width: 100px;
+      height: 80px;
+      margin-left: 5%;
+      margin-right: 5%; }
+  .encabezados {
+    font-size: 14px; }
+  h2,
+  p {
+    font-size: 8px; }
+  th,
+  td {
+    font-size: 10px; }
+  .menu nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    font-size: 15px; }
+  .log {
+    font-size: 25px;
+    padding: 2px; }
+  .cuento {
+    width: 90%; }
+    .cuento .cuento__foto {
+      width: 220px;
+      height: 150px;
+      margin: 10%; }
+    .cuento p {
+      font-size: 12px; }
+  .textCar {
+    width: 90%; }
+    .textCar p {
+      font-size: 12px; }
+  .carousel-item__fotoCar {
+    width: 220px;
+    height: 150px;
+    margin: 10%; }
+  .tituloContacto,
+  .encabezadoChango__titulo {
+    color: #3d3f3ff3;
+    font-family: 'Balthazar', serif;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 3px; } }
