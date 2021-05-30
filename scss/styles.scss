@@ -266,10 +266,9 @@ label {
     font-family: 'Balthazar', serif;
     color: $cLetra;
     font-size: 20px;
-    table-layout: auto;
-    width:50%;
     margin-top:150px;
     margin-bottom: 400px;
+    padding-top:50px;
     text-align: center;
     border: 0px;
     line-height: 40px;
@@ -277,7 +276,7 @@ label {
         width: 40%;
         opacity: 70%;
         border-radius: 5px;
-    }
+    }        
 }
 .animate__jackInTheBox {
     animation-duration: 2s;
