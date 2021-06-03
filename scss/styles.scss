@@ -196,7 +196,7 @@ video {
         margin-right: 20px;
         margin-left: 30px;
         margin-bottom:20px;
-        width: 300px;
+        width: 280px;
         height: 250px;
         border-style: groove;
     }
@@ -262,21 +262,31 @@ label {
     font-family: 'Balthazar', serif;
     font-size: 15px;
 }
-.card {
-    font-family: 'Balthazar', serif;
-    color: $cLetra;
-    font-size: 20px;
-    margin-top:50px;
-    margin-bottom: 50px;
-    padding-top:10px;
-    text-align: center;
-    border: 0px;
-    line-height: 40px;
-    .table--stars {
-        width: 40%;
-        opacity: 70%;
+.grupoCards {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    .card-img {
+        width: 100%;
+        opacity: 50%;
         border-radius: 5px;
-    }        
+        background-color: $bWhite;
+    }
+    .text-center {
+        font-family: 'Balthazar', serif;
+        color: $cLetra;
+        font-size: 20px;
+        margin-top:10px;
+        margin-bottom: 10px;
+        padding:10px;
+        text-align: center;
+        border: 0px;
+        line-height: 40px;
+        .table--stars {
+            width: 40%;
+            opacity: 40%;
+            border-radius: 5px;
+        }        
+    }
 }
 .animate__jackInTheBox {
     animation-duration: 2s;
@@ -318,7 +328,7 @@ input:focus {
 }
 .redes {
     .redes--red {
-        @include logs (10%,hidden,5%)
+        @include logs (40%,hidden,5%)
         margin-bottom:80px;
     }
 }
