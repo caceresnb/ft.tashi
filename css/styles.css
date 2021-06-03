@@ -126,7 +126,7 @@ video {
   text-align: center;
   margin-bottom: 100px;
   margin-top: 20px;
-  grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4" "stock__productos5 stock__productos6 stock__productos7 stock__productos8"; }
+  grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4" "stock__productos5 stock__productos6 stock__productos7 stock__productos8"; }
   .stock .stock--productosFotos {
     transition: transform .5s; }
   .stock .stock--productosFotos:hover {
@@ -152,7 +152,7 @@ video {
     margin-right: 20px;
     margin-left: 30px;
     margin-bottom: 20px;
-    width: 300px;
+    width: 280px;
     height: 250px;
     border-style: groove; }
 
@@ -216,21 +216,28 @@ label {
   font-family: 'Balthazar', serif;
   font-size: 15px; }
 
-table {
-  font-family: 'Balthazar', serif;
-  color: #3d3f3ff3;
-  font-size: 20px;
-  table-layout: auto;
-  width: 50%;
-  margin-top: 150px;
-  margin-bottom: 400px;
-  text-align: center;
-  border: 0px;
-  line-height: 40px; }
-  table .table--stars {
-    width: 40%;
-    opacity: 70%;
-    border-radius: 5px; }
+.grupoCards {
+  margin-top: 50px;
+  margin-bottom: 100px; }
+  .grupoCards .card-img {
+    width: 100%;
+    opacity: 50%;
+    border-radius: 5px;
+    background-color: #fcfafa; }
+  .grupoCards .text-center {
+    font-family: 'Balthazar', serif;
+    color: #3d3f3ff3;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 0px;
+    line-height: 40px; }
+    .grupoCards .text-center .table--stars {
+      width: 40%;
+      opacity: 40%;
+      border-radius: 5px; }
 
 .animate__jackInTheBox {
   animation-duration: 2s;
@@ -279,7 +286,7 @@ input:focus {
   width: 200px; }
 
 .redes .redes--red {
-  opacity: 10%;
+  opacity: 40%;
   border-bottom-style: hidden;
   width: 5%;
   margin-bottom: 80px; }
@@ -334,7 +341,7 @@ footer {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 3px;
-    grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4"     "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
+    grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4"     "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
     background-color: whitesmoke; }
     .stock .stock--productosFotos {
       width: 150px;
@@ -389,7 +396,7 @@ footer {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 3px;
-    grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4" "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
+    grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4" "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
     background-color: whitesmoke; }
     .stock .stock--productosFotos {
       width: 130px;
@@ -443,7 +450,7 @@ footer {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 3px;
-    grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4" "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
+    grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4" "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
     background-color: whitesmoke; }
     .stock .stock--productosFotos {
       width: 100px;
