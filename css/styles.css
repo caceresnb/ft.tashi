@@ -456,7 +456,7 @@ footer {
   .tituloContacto {
     color: #e7e9eb;
     font-family: 'Balthazar', serif;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 5px;
     margin-bottom: 5px;
     letter-spacing: 3px; }
@@ -465,6 +465,14 @@ footer {
     margin-top: 5px;
     margin-bottom: 5px;
     letter-spacing: 3px; }
+<<<<<<< HEAD
+  .encabezadoChango .encabezadoChango__titulo {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 3px; }
+=======
+>>>>>>> 353e665b554c5bad6a74506b82595d082b945769
   .encabezadoChango .encabezadoChango__chango {
     width: 120px;
     opacity: 25%;
@@ -537,7 +545,11 @@ footer {
   .tituloContacto {
     color: #3d3f3ff3;
     font-family: 'Balthazar', serif;
+<<<<<<< HEAD
     font-size: 12px;
+=======
+    font-size: 16px;
+>>>>>>> 353e665b554c5bad6a74506b82595d082b945769
     margin-top: 5px;
     margin-bottom: 5px;
     letter-spacing: 3px; }
