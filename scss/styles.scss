@@ -157,6 +157,8 @@ video {
     font-size: 25px;
     letter-spacing: 1px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 100px;
     margin-top: 20px;
     grid-template-areas:"stock__productos1 stock__productos2 stock__productos3 stock__productos4"
@@ -191,14 +193,21 @@ video {
     .stock__productos8 { 
         grid-area: stock__productos8; 
     }
+    .stock__img {
+        display: block;
+        text-align: center;
+        align-self: center;
+    }
     .stock--productosFotos {
+        display: block;
         margin-top: 60px;
-        margin-right: 20px;
+        margin-right: 30px;
         margin-left: 30px;
         margin-bottom:20px;
         width: 280px;
         height: 250px;
         border-style: groove;
+        margin-top: 60px;
     }
 }
 .encabezadoChango {
@@ -373,8 +382,8 @@ footer {
         .stock--productosFotos {
             width: 150px;
             height: 100px;
-            margin-left: 5%;
-            margin-right: 5%;
+            margin-left: 3%;
+            margin-right: 3%;
         }
     }
     .menu {
@@ -391,6 +400,7 @@ footer {
         font-size: 20px;
     }
     h2,
+    h4,
     p {
         font-size: 14px;
     }
@@ -423,14 +433,26 @@ footer {
         width: 90%;
         margin-left: 8%;
     }
-    .tituloContacto,
-    .encabezadoChango__titulo {
-        color:$bGris;
+    .tituloContacto {
+        color:$cLetra;
         font-family: 'Balthazar', serif;
         font-size: 22px;
         margin-top: 5px;
         margin-bottom: 5px;
         letter-spacing: 3px;
+    }
+    .encabezadoChango {
+        .encabezadoChango__titulo {
+            font-size: 22px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            letter-spacing: 3px;
+        }
+        .encabezadoChango__chango {
+            width: 200px;
+            opacity: 25%;
+            border-radius: 30px;
+        }
     }
 }
 @media screen and (max-width: 480px) {
@@ -446,10 +468,10 @@ footer {
                             "stock__productos7 stock__productos8";
         background-color:whitesmoke;
         .stock--productosFotos {
-            width: 130px;
-            height: 90px;
-            margin-left: 5%;
-            margin-right: 5%;
+            width: 150px;
+            height: 100px;
+            margin-left: 3%;
+            margin-right: 3%;
         }
     }
     .menu {
@@ -466,8 +488,10 @@ footer {
         font-size: 16px;
     }
     h2,
+    h4,
+    h5,
     p {
-        font-size: 11px;
+        font-size: 13px;
     }
     .log {
         font-size: 30px;
@@ -497,15 +521,46 @@ footer {
         margin-left: 5%;
         margin-right: 5%;
     }
-    .tituloContacto,
-    .encabezadoChango__titulo {
-        color:$cLetra;
+    .tituloContacto {
+        color:$bGris;
         font-family: 'Balthazar', serif;
         font-size: 12px;
         margin-top: 5px;
         margin-bottom: 5px;
         letter-spacing: 3px;
     }
+    .encabezadoChango {
+        .encabezadoChango__titulo {
+            font-size: 12px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            letter-spacing: 3px;
+        }
+        .encabezadoChango__chango {
+            width: 120px;
+            opacity: 25%;
+            border-radius: 30px;
+        }
+    }
+    .drop {
+        font-size: 16px;
+    }
+    .card-text {
+        font-family: 'Balthazar', serif;
+        color: $cLetra;
+        font-size: 12px;
+        margin: 3%;
+        text-align: center;
+        justify-self: center;
+        border: 0px;
+        line-height: 7px;
+    }
+    .table--stars {
+            width: 10%;
+            opacity: 40%;
+            border-radius: 2px;
+            margin: 2px;
+    }  
 }
 @media screen and (max-width: 320px) {
     .stock {
@@ -520,18 +575,20 @@ footer {
                             "stock__productos7 stock__productos8";
         background-color:whitesmoke;
         .stock--productosFotos {
-            width: 100px;
+            width: 120px;
             height: 80px;
-            margin-left: 5%;
-            margin-right: 5%;
+            margin-left: 3%;
+            margin-right: 3%;
         }
     }
     .encabezados {
         font-size: 14px;
     }
     h2,
+    h4,
+    h5,
     p {
-        font-size: 8px;
+        font-size: 11px;
     }
     th,
     td {
@@ -573,13 +630,44 @@ footer {
         height: 150px;
         margin: 10%;
     }
-    .tituloContacto,
-    .encabezadoChango__titulo {
+    .tituloContacto {
         color:$cLetra;
         font-family: 'Balthazar', serif;
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 5px;
         margin-bottom: 5px;
         letter-spacing: 3px;
     }
+    .encabezadoChango {
+        .encabezadoChango__titulo {
+            font-size: 12px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            letter-spacing: 3px;
+        }
+        .encabezadoChango__chango {
+            width: 120px;
+            opacity: 25%;
+            border-radius: 30px;
+        }
+    }
+    .drop {
+        font-size: 16px;
+    }
+    .card-text {
+        font-family: 'Balthazar', serif;
+        color: $cLetra;
+        font-size: 12px;
+        margin: 3%;
+        text-align: center;
+        justify-self: center;
+        border: 0px;
+        line-height: 7px;
+    }
+    .table--stars {
+            width: 10%;
+            opacity: 40%;
+            margin: 2px;
+            border-radius: 2px;
+    }        
 }
