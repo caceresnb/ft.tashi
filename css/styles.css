@@ -128,7 +128,7 @@ video {
   align-items: center;
   margin-bottom: 100px;
   margin-top: 20px;
-  grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4" "stock__productos5 stock__productos6 stock__productos7 stock__productos8"; }
+  grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4" "stock__productos5 stock__productos6 stock__productos7 stock__productos8"; }
   .stock .stock--productosFotos {
     transition: transform .5s; }
   .stock .stock--productosFotos:hover {
@@ -342,14 +342,98 @@ footer {
   display: inline;
   text-align: center; }
 
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 1200px) {
+  .stock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 3px;
+    grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4"     "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
+    background-color: whitesmoke; }
+    .stock .stock--productosFotos {
+      width: 200px;
+      height: 180px;
+      margin-left: 3%;
+      margin-right: 3%; }
+  .menu nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    font-size: 22px; } }
+
+@media screen and (max-width: 992px) {
+  .stock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 3px;
+    grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4"     "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
+    background-color: whitesmoke; }
+    .stock .stock--productosFotos {
+      width: 180px;
+      height: 120px;
+      margin-left: 3%;
+      margin-right: 3%; }
+  .menu nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    font-size: 22px; }
+  .encabezados {
+    font-size: 20px; }
+  h2,
+  h4,
+  p {
+    font-size: 16px; }
+  .log {
+    font-size: 37px;
+    padding: 2px; }
+  .cuento {
+    width: 90%; }
+    .cuento .cuento__foto {
+      width: 380px;
+      height: 320px;
+      margin-left: 10%;
+      margin-right: 10%; }
+    .cuento p {
+      font-size: 16px; }
+  .carousel-item__fotoCar {
+    width: 450px;
+    height: 340px;
+    margin-left: 12%;
+    margin-right: 10%; }
+  .textCar {
+    width: 90%;
+    margin-left: 8%; }
+    .textCar p {
+      font-size: 16px; }
+  .tituloContacto {
+    color: #3d3f3ff3;
+    font-family: 'Balthazar', serif;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 3px; }
+  .encabezadoChango .encabezadoChango__titulo {
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 3px; }
+  .encabezadoChango .encabezadoChango__chango {
+    width: 200px;
+    opacity: 25%;
+    border-radius: 30px; } }
+
+@media screen and (max-width: 768px) {
   .stock {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 3px;
-    grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4"     "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
+    grid-template-areas: "stock__productos1 stock__productos2 stock__productos3"     "stock__productos4 stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
     background-color: whitesmoke; }
     .stock .stock--productosFotos {
       width: 150px;
@@ -413,7 +497,7 @@ footer {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 3px;
-    grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4" "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
+    grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4" "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
     background-color: whitesmoke; }
     .stock .stock--productosFotos {
       width: 150px;
@@ -456,7 +540,7 @@ footer {
   .tituloContacto {
     color: #e7e9eb;
     font-family: 'Balthazar', serif;
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 5px;
     margin-bottom: 5px;
     letter-spacing: 3px; }
@@ -465,14 +549,6 @@ footer {
     margin-top: 5px;
     margin-bottom: 5px;
     letter-spacing: 3px; }
-<<<<<<< HEAD
-  .encabezadoChango .encabezadoChango__titulo {
-    font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    letter-spacing: 3px; }
-=======
->>>>>>> 353e665b554c5bad6a74506b82595d082b945769
   .encabezadoChango .encabezadoChango__chango {
     width: 120px;
     opacity: 25%;
@@ -493,88 +569,3 @@ footer {
     opacity: 40%;
     border-radius: 2px;
     margin: 2px; } }
-
-@media screen and (max-width: 320px) {
-  .stock {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 3px;
-    grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4" "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
-    background-color: whitesmoke; }
-    .stock .stock--productosFotos {
-      width: 120px;
-      height: 80px;
-      margin-left: 3%;
-      margin-right: 3%; }
-  .encabezados {
-    font-size: 14px; }
-  h2,
-  h4,
-  h5,
-  p {
-    font-size: 11px; }
-  th,
-  td {
-    font-size: 10px; }
-  .menu nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: space-around;
-    font-size: 15px; }
-  .log {
-    font-size: 25px;
-    padding: 2px; }
-  .cuento {
-    width: 90%; }
-    .cuento .cuento__foto {
-      width: 220px;
-      height: 150px;
-      margin: 10%; }
-    .cuento p {
-      font-size: 12px; }
-  .textCar {
-    width: 90%; }
-    .textCar p {
-      font-size: 12px; }
-  .carousel-item__fotoCar {
-    width: 220px;
-    height: 150px;
-    margin: 10%; }
-  .tituloContacto {
-    color: #3d3f3ff3;
-    font-family: 'Balthazar', serif;
-<<<<<<< HEAD
-    font-size: 12px;
-=======
-    font-size: 16px;
->>>>>>> 353e665b554c5bad6a74506b82595d082b945769
-    margin-top: 5px;
-    margin-bottom: 5px;
-    letter-spacing: 3px; }
-  .encabezadoChango .encabezadoChango__titulo {
-    font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    letter-spacing: 3px; }
-  .encabezadoChango .encabezadoChango__chango {
-    width: 120px;
-    opacity: 25%;
-    border-radius: 30px; }
-  .drop {
-    font-size: 16px; }
-  .card-text {
-    font-family: 'Balthazar', serif;
-    color: #3d3f3ff3;
-    font-size: 12px;
-    margin: 3%;
-    text-align: center;
-    justify-self: center;
-    border: 0px;
-    line-height: 7px; }
-  .table--stars {
-    width: 10%;
-    opacity: 40%;
-    margin: 2px;
-    border-radius: 2px; } }
