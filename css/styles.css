@@ -460,8 +460,9 @@ footer {
     flex-direction: column;
     align-items: space-around;
     font-size: 24px; }
-  .encabezados {
-    font-size: 22px; }
+  .encabezados,
+  h1 {
+    font-size: 26px; }
   h2,
   h4,
   p {
@@ -483,7 +484,7 @@ footer {
     display: block;
     text-align: center;
     justify-content: center;
-    margin-left: 8%; }
+    margin-left: 10%; }
     .carousel-inner .carousel-item__fotoCar {
       display: block;
       margin-left: 10%;
@@ -493,7 +494,8 @@ footer {
     width: 90%;
     margin-left: 8%; }
     .textCar p {
-      font-size: 16px; }
+      font-size: 20px;
+      margin-left: 5px; }
   .tituloContacto {
     color: #3d3f3ff3;
     font-family: 'Balthazar', serif;
@@ -511,9 +513,11 @@ footer {
       margin-bottom: 5px;
       letter-spacing: 3px; }
     .formularioCentrado .encabezadoChango .encabezadoChango__chango, .formularioContacto .encabezadoChango .encabezadoChango__chango {
-      width: 200px;
+      width: 260px;
       opacity: 25%;
       border-radius: 30px; }
+    .formularioCentrado label, .formularioContacto label {
+      font-size: 20px; }
   .card {
     display: block;
     justify-content: center;
@@ -525,20 +529,20 @@ footer {
     .card .text-center {
       font-family: 'Balthazar', serif;
       color: #3d3f3ff3;
-      font-size: 18px;
       margin: 1%;
       text-align: center;
       justify-self: center;
-      border: 0px;
-      line-height: 10px; }
+      border: 0px; }
       .card .text-center .card-text {
         font-size: 16px;
         line-height: 2px; }
+      .card .text-center .card-title {
+        font-size: 20px; }
     .card .table--stars {
-      width: 10%;
+      width: 30%;
       opacity: 40%;
-      border-radius: 4px;
-      margin: 8px; }
+      border-radius: 2px;
+      margin: 10px; }
   .redes--red {
     margin-top: 50px; } }
 

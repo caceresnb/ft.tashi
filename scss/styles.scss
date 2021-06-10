@@ -531,8 +531,9 @@ footer {
             }
         }
     }
-    .encabezados {
-        font-size: 22px;
+    .encabezados,
+    h1 {
+        font-size: 26px;
     }
     h2,
     h4,
@@ -560,7 +561,7 @@ footer {
         display: block;
         text-align: center;
         justify-content: center;
-        margin-left: 8%;
+        margin-left: 10%;
         .carousel-item__fotoCar {
             display: block;
             margin-left: 10%;
@@ -570,7 +571,8 @@ footer {
     }
     .textCar {
         p {
-            font-size: 16px;
+            font-size: 20px;
+            margin-left: 5px;
         }
         width: 90%;
         margin-left: 8%;
@@ -595,10 +597,13 @@ footer {
                 letter-spacing: 3px;
             }
             .encabezadoChango__chango {
-                width: 200px;
+                width: 260px;
                 opacity: 25%;
                 border-radius: 30px;
             }
+        }
+        label {
+            font-size: 20px;
         }
     }
     .card {
@@ -613,22 +618,23 @@ footer {
         .text-center {
             font-family: 'Balthazar', serif;
             color: $cLetra;
-            font-size: 18px;
             margin: 1%;
             text-align: center;
             justify-self: center;
             border: 0px;
-            line-height: 10px;
             .card-text {
                 font-size: 16px;
                 line-height: 2px;
             }
+            .card-title {
+                font-size: 20px;
+            }
         }
         .table--stars {
-                width: 10%;
+                width: 30%;
                 opacity: 40%;
-                border-radius: 4px;
-                margin: 8px;
+                border-radius: 2px;
+                margin: 10px;
         }
     }
     .redes--red {
