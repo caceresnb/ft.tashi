@@ -386,25 +386,27 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: space-around;
-    font-size: 22px; }
+    font-size: 20px; }
   .encabezados {
     font-size: 20px; }
+  h1,
   h2,
   h4,
   p {
-    font-size: 16px; }
+    font-size: 24px; }
   .log {
     font-size: 37px;
     padding: 2px; }
   .cuento {
     width: 90%; }
     .cuento .cuento__foto {
-      width: 380px;
-      height: 320px;
+      width: 500px;
+      height: 380px;
       margin-left: 10%;
-      margin-right: 10%; }
+      margin-right: 10%;
+      margin-top: 20px; }
     .cuento p {
-      font-size: 16px; }
+      font-size: 22px; }
   .carousel-inner {
     display: block;
     text-align: center;
@@ -439,11 +441,11 @@ footer {
 @media screen and (max-width: 768px) {
   .stock {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1.5fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 3px;
-    grid-template-areas: "stock__productos1 stock__productos2 stock__productos3"     "stock__productos4 stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
+    grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4 " "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
     background-color: whitesmoke; }
     .stock .stock__img {
       display: inline-block;
@@ -451,39 +453,41 @@ footer {
       margin: 10%; }
     .stock .stock--productosFotos {
       display: block;
-      width: 210px;
-      height: 140px; }
+      width: 270px;
+      height: 180px; }
   .menu nav ul {
     display: flex;
     flex-direction: column;
     align-items: space-around;
-    font-size: 20px; }
+    font-size: 24px; }
   .encabezados {
-    font-size: 20px; }
+    font-size: 22px; }
   h2,
   h4,
   p {
-    font-size: 14px; }
+    font-size: 20px; }
   .log {
     font-size: 35px;
     padding: 2px; }
   .cuento {
     width: 90%; }
     .cuento .cuento__foto {
-      width: 360px;
-      height: 300px;
+      width: 450px;
+      height: 330px;
       margin-left: 10%;
+      margin-top: 20px;
       margin-right: 10%; }
     .cuento p {
-      font-size: 16px; }
+      font-size: 20px; }
   .carousel-inner {
     display: block;
     text-align: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-left: 8%; }
     .carousel-inner .carousel-item__fotoCar {
       display: block;
-      margin-left: 20%;
-      width: 400px;
+      margin-left: 10%;
+      width: 450px;
       height: 300px; }
   .textCar {
     width: 90%;
@@ -499,7 +503,8 @@ footer {
     letter-spacing: 3px; }
   .formularioCentrado, .formularioContacto {
     display: block;
-    margin: 2%; }
+    margin-left: 10px;
+    margin-top: 20px; }
     .formularioCentrado .encabezadoChango .encabezadoChango__titulo, .formularioContacto .encabezadoChango .encabezadoChango__titulo {
       font-size: 22px;
       margin-top: 5px;
@@ -513,24 +518,29 @@ footer {
     display: block;
     justify-content: center;
     text-align: center;
-    width: 70%;
-    margin-left: 15%; }
+    width: 100%;
+    margin-left: 3%; }
     .card .card-img {
       width: 100%; }
     .card .text-center {
       font-family: 'Balthazar', serif;
       color: #3d3f3ff3;
-      font-size: 12px;
-      margin: 3%;
+      font-size: 18px;
+      margin: 1%;
       text-align: center;
       justify-self: center;
       border: 0px;
-      line-height: 7px; }
+      line-height: 10px; }
+      .card .text-center .card-text {
+        font-size: 16px;
+        line-height: 2px; }
     .card .table--stars {
-      width: 8%;
+      width: 10%;
       opacity: 40%;
       border-radius: 4px;
-      margin: 8px; } }
+      margin: 8px; }
+  .redes--red {
+    margin-top: 50px; } }
 
 @media screen and (max-width: 480px) {
   .stock {
@@ -630,4 +640,4 @@ footer {
       border-radius: 4px;
       margin: 8px; }
   .redes--red {
-    margin-top: 60px; } }
+    margin-top: 50px; } }
