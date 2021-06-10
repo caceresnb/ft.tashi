@@ -703,9 +703,10 @@ footer {
         display: block;
         text-align: center;
         justify-content: center;
+        margin-left: 5%;
         .carousel-item__fotoCar {
             display: block;
-            margin-left: 20%;
+            margin-left: 15%;
             width: 290px;
             height: 200px;
         }
@@ -729,7 +730,7 @@ footer {
                 letter-spacing: 3px;
             }
             .encabezadoChango__chango {
-                width: 120px;
+                width: 170px;
                 opacity: 25%;
                 border-radius: 30px;
             }
@@ -750,12 +751,19 @@ footer {
         .text-center {
             font-family: 'Balthazar', serif;
             color: $cLetra;
-            font-size: 12px;
             margin: 3%;
             text-align: center;
             justify-self: center;
             border: 0px;
             line-height: 7px;
+            .card-text {
+                font-size: 14px;
+                line-height: 5px;
+            }
+            .card-title {
+                font-size: 16px;
+            }
+
         }
         .table--stars {
                 width: 8%;
@@ -773,7 +781,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 5px;
+        grid-column-gap: 1px;
         grid-row-gap: 3px;
         grid-template-areas:"stock__productos1 stock__productos2"    
                             "stock__productos3 stock__productos4"
@@ -783,12 +791,12 @@ footer {
         .stock__img {
             display: inline-block;
             text-align: center;
-            margin: 8%;
+            margin: 1%;
         }
         .stock--productosFotos {
             display: block;
-            width: 130px;
-            height: 90px;
+            width: 120px;
+            height: 80px;
         }
     }
     .menu {
@@ -797,12 +805,13 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: space-around;
-        font-size: 12px;
+        font-size: 14px;
             }
         }
     }
-    .encabezados {
-        font-size: 12px;
+    .encabezados,
+    h1 {
+        font-size: 14px;
     }
     h2,
     h4,
@@ -822,14 +831,14 @@ footer {
         margin-right: 5%;
         }
         p {
-            font-size: 10px;
+            font-size: 12px;
         }
         width: 90%;
     }
     .textCar {
         width: 90%;
         p {
-            font-size: 10px;
+            font-size: 12px;
         }
     }
     .carousel-inner {
@@ -838,9 +847,10 @@ footer {
         justify-content: center;
         .carousel-item__fotoCar {
             display: block;
-            margin-left: 20%;
-            width: 250px;
-            height: 190px;
+            margin-left: 10%;
+            margin-top: 30px;
+            width: 200px;
+            height: 160px;
         }
     }
     .tituloContacto {
@@ -875,20 +885,27 @@ footer {
         display: block;
         justify-content: center;
         text-align: center;
-        width: 60%;
-        margin-left: 15%;
+        width: 90%;
+        margin-left: 8%;
         .card-img {
             width: 100%;
         }
         .text-center {
             font-family: 'Balthazar', serif;
             color: $cLetra;
-            font-size: 10px;
-            margin: 3%;
+            font-size: 12px;
+            margin: 2%;
             text-align: center;
             justify-self: center;
             border: 0px;
-            line-height: 7px;
+            line-height: 5px;
+            .card-text {
+                font-size: 12px;
+                line-height: 5px;
+            }
+            .card-title {
+                font-size: 14px;
+            }
         }
         .table--stars {
                 width: 5%;
