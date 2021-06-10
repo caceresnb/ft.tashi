@@ -345,17 +345,20 @@ footer {
 @media screen and (max-width: 1200px) {
   .stock {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 3px;
     grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4"     "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
     background-color: whitesmoke; }
+    .stock .stock__img {
+      display: inline-block;
+      text-align: center;
+      margin: 10%; }
     .stock .stock--productosFotos {
-      width: 200px;
-      height: 180px;
-      margin-left: 3%;
-      margin-right: 3%; }
+      display: block;
+      width: 150px;
+      height: 100px; }
   .menu nav ul {
     display: flex;
     flex-direction: column;
@@ -365,17 +368,20 @@ footer {
 @media screen and (max-width: 992px) {
   .stock {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 3px;
     grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4"     "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
     background-color: whitesmoke; }
+    .stock .stock__img {
+      display: inline-block;
+      text-align: center;
+      margin: 10%; }
     .stock .stock--productosFotos {
-      width: 180px;
-      height: 120px;
-      margin-left: 3%;
-      margin-right: 3%; }
+      display: block;
+      width: 150px;
+      height: 100px; }
   .menu nav ul {
     display: flex;
     flex-direction: column;
@@ -399,11 +405,15 @@ footer {
       margin-right: 10%; }
     .cuento p {
       font-size: 16px; }
-  .carousel-item__fotoCar {
-    width: 450px;
-    height: 340px;
-    margin-left: 12%;
-    margin-right: 10%; }
+  .carousel-inner {
+    display: block;
+    text-align: center;
+    justify-content: center; }
+    .carousel-inner .carousel-item__fotoCar {
+      display: block;
+      margin-left: 12%;
+      width: 450px;
+      height: 340px; }
   .textCar {
     width: 90%;
     margin-left: 8%; }
@@ -430,16 +440,19 @@ footer {
   .stock {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1.5fr);
     grid-column-gap: 5px;
     grid-row-gap: 3px;
     grid-template-areas: "stock__productos1 stock__productos2 stock__productos3"     "stock__productos4 stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
     background-color: whitesmoke; }
+    .stock .stock__img {
+      display: inline-block;
+      text-align: center;
+      margin: 10%; }
     .stock .stock--productosFotos {
-      width: 150px;
-      height: 100px;
-      margin-left: 3%;
-      margin-right: 3%; }
+      display: block;
+      width: 210px;
+      height: 140px; }
   .menu nav ul {
     display: flex;
     flex-direction: column;
@@ -463,11 +476,15 @@ footer {
       margin-right: 10%; }
     .cuento p {
       font-size: 16px; }
-  .carousel-item__fotoCar {
-    width: 400px;
-    height: 300px;
-    margin-left: 12%;
-    margin-right: 10%; }
+  .carousel-inner {
+    display: block;
+    text-align: center;
+    justify-content: center; }
+    .carousel-inner .carousel-item__fotoCar {
+      display: block;
+      margin-left: 20%;
+      width: 400px;
+      height: 300px; }
   .textCar {
     width: 90%;
     margin-left: 8%; }
@@ -480,15 +497,40 @@ footer {
     margin-top: 5px;
     margin-bottom: 5px;
     letter-spacing: 3px; }
-  .encabezadoChango .encabezadoChango__titulo {
-    font-size: 22px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    letter-spacing: 3px; }
-  .encabezadoChango .encabezadoChango__chango {
-    width: 200px;
-    opacity: 25%;
-    border-radius: 30px; } }
+  .formularioCentrado, .formularioContacto {
+    display: block;
+    margin: 2%; }
+    .formularioCentrado .encabezadoChango .encabezadoChango__titulo, .formularioContacto .encabezadoChango .encabezadoChango__titulo {
+      font-size: 22px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      letter-spacing: 3px; }
+    .formularioCentrado .encabezadoChango .encabezadoChango__chango, .formularioContacto .encabezadoChango .encabezadoChango__chango {
+      width: 200px;
+      opacity: 25%;
+      border-radius: 30px; }
+  .card {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%; }
+    .card .card-img {
+      width: 100%; }
+    .card .text-center {
+      font-family: 'Balthazar', serif;
+      color: #3d3f3ff3;
+      font-size: 12px;
+      margin: 3%;
+      text-align: center;
+      justify-self: center;
+      border: 0px;
+      line-height: 7px; }
+    .card .table--stars {
+      width: 8%;
+      opacity: 40%;
+      border-radius: 4px;
+      margin: 8px; } }
 
 @media screen and (max-width: 480px) {
   .stock {
@@ -499,11 +541,14 @@ footer {
     grid-row-gap: 3px;
     grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4" "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
     background-color: whitesmoke; }
+    .stock .stock__img {
+      display: inline-block;
+      text-align: center;
+      margin: 8%; }
     .stock .stock--productosFotos {
+      display: block;
       width: 150px;
-      height: 100px;
-      margin-left: 3%;
-      margin-right: 3%; }
+      height: 100px; }
   .menu nav ul {
     display: flex;
     flex-direction: column;
@@ -522,8 +567,8 @@ footer {
   .cuento {
     width: 90%; }
     .cuento .cuento__foto {
-      width: 180px;
-      height: 110px;
+      width: 290px;
+      height: 200px;
       margin-left: 5%;
       margin-right: 5%; }
     .cuento p {
@@ -532,11 +577,15 @@ footer {
     width: 90%; }
     .textCar p {
       font-size: 14px; }
-  .carousel-item__fotoCar {
-    width: 180px;
-    height: 110px;
-    margin-left: 5%;
-    margin-right: 5%; }
+  .carousel-inner {
+    display: block;
+    text-align: center;
+    justify-content: center; }
+    .carousel-inner .carousel-item__fotoCar {
+      display: block;
+      margin-left: 20%;
+      width: 290px;
+      height: 200px; }
   .tituloContacto {
     color: #e7e9eb;
     font-family: 'Balthazar', serif;
@@ -544,28 +593,41 @@ footer {
     margin-top: 5px;
     margin-bottom: 5px;
     letter-spacing: 3px; }
-  .encabezadoChango .encabezadoChango__titulo {
-    font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    letter-spacing: 3px; }
-  .encabezadoChango .encabezadoChango__chango {
-    width: 120px;
-    opacity: 25%;
-    border-radius: 30px; }
+  .formularioCentrado, .formularioContacto {
+    display: block;
+    margin: 2%; }
+    .formularioCentrado .encabezadoChango .encabezadoChango__titulo, .formularioContacto .encabezadoChango .encabezadoChango__titulo {
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 5px;
+      letter-spacing: 3px; }
+    .formularioCentrado .encabezadoChango .encabezadoChango__chango, .formularioContacto .encabezadoChango .encabezadoChango__chango {
+      width: 120px;
+      opacity: 25%;
+      border-radius: 30px; }
   .drop {
     font-size: 16px; }
-  .card-text {
-    font-family: 'Balthazar', serif;
-    color: #3d3f3ff3;
-    font-size: 12px;
-    margin: 3%;
+  .card {
+    display: block;
+    justify-content: center;
     text-align: center;
-    justify-self: center;
-    border: 0px;
-    line-height: 7px; }
-  .table--stars {
-    width: 10%;
-    opacity: 40%;
-    border-radius: 2px;
-    margin: 2px; } }
+    width: 70%;
+    margin-left: 15%; }
+    .card .card-img {
+      width: 100%; }
+    .card .text-center {
+      font-family: 'Balthazar', serif;
+      color: #3d3f3ff3;
+      font-size: 12px;
+      margin: 3%;
+      text-align: center;
+      justify-self: center;
+      border: 0px;
+      line-height: 7px; }
+    .card .table--stars {
+      width: 8%;
+      opacity: 40%;
+      border-radius: 4px;
+      margin: 8px; }
+  .redes--red {
+    margin-top: 60px; } }
