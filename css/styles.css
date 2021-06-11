@@ -168,13 +168,13 @@ video {
   font-family: "Balthazar";
   color: #3d3f3ff3;
   font-size: 30px;
-  margin-top: 5px;
+  margin-top: 50px;
   margin-bottom: 5px;
   letter-spacing: 3px; }
 
 .encabezadoChango .encabezadoChango__chango {
-  margin-top: 80px;
-  margin-bottom: 5px;
+  margin-top: 100px;
+  margin-bottom: 10px;
   width: 15%;
   opacity: 25%;
   border-radius: 30px; }
@@ -199,6 +199,12 @@ video {
   margin-top: 20px;
   margin-bottom: 100px;
   line-height: 30px; }
+  .formularioCentrado select, .formularioContacto select {
+    font-size: 22px; }
+  .formularioCentrado label, .formularioContacto label {
+    font-size: 22px; }
+  .formularioCentrado input, .formularioContacto input {
+    margin: 3px; }
 
 .bottCompra, .compraSi, .compraNo {
   margin-top: 40px;
@@ -226,22 +232,32 @@ label {
 
 .grupoCards {
   margin-top: 50px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  margin-left: 100px;
+  width: 80%; }
   .grupoCards .card-img {
     width: 100%;
     opacity: 50%;
     border-radius: 5px;
     background-color: #fcfafa; }
   .grupoCards .text-center {
-    font-family: 'Balthazar', serif;
-    color: #3d3f3ff3;
-    font-size: 20px;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-bottom: 10px;
     padding: 10px;
     text-align: center;
     border: 0px;
     line-height: 40px; }
+    .grupoCards .text-center .card-title {
+      font-size: 22px;
+      line-height: 40px;
+      font-family: 'Balthazar', serif;
+      color: #3d3f3ff3;
+      margin-top: 20px; }
+    .grupoCards .text-center .card-text {
+      font-size: 20px;
+      margin: 2px;
+      font-family: 'Balthazar', serif;
+      color: #3d3f3ff3; }
     .grupoCards .text-center .table--stars {
       width: 40%;
       opacity: 40%;
@@ -347,29 +363,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 3px;
-    grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4"     "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
-    background-color: whitesmoke; }
-    .stock .stock__img {
-      display: inline-block;
-      text-align: center;
-      margin: 10%; }
-    .stock .stock--productosFotos {
-      display: block;
-      width: 150px;
-      height: 100px; }
-  .menu nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: space-around;
-    font-size: 22px; } }
-
-@media screen and (max-width: 992px) {
-  .stock {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4"     "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
@@ -385,8 +378,8 @@ footer {
         font-size: 18px; }
     .stock .stock--productosFotos {
       display: block;
-      width: 190px;
-      height: 140px;
+      width: 250px;
+      height: 180px;
       margin: 2px;
       margin-top: 3px;
       margin-bottom: 8px; }
@@ -394,13 +387,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: space-around;
-    font-size: 20px; }
+    font-size: 26px; }
     .menu nav ul li {
       margin-left: 1px;
       margin-right: 1px;
-      padding: 0px; }
-    .menu nav ul .log {
-      padding: 0px; }
+      padding: 2px; }
+      .menu nav ul li .log {
+        padding: 0px;
+        font-size: 40px; }
   .encabezados,
   h1 {
     font-size: 26px; }
@@ -409,10 +403,6 @@ footer {
   h4,
   p {
     font-size: 22px; }
-  .log {
-    font-size: 37px;
-    padding: 2px;
-    font-size: 35px; }
   .cuento {
     width: 90%; }
     .cuento .cuento__foto {
@@ -441,6 +431,102 @@ footer {
       margin-left: 8%; }
       .container .textCar p {
         font-size: 22px; }
+  .formularioContacto label {
+    font-size: 22px; }
+  .formularioContacto .botonesForm__bottCont {
+    margin-top: 20px;
+    font-size: 20px; }
+  .tituloContacto {
+    color: #3d3f3ff3;
+    font-family: 'Balthazar', serif;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    letter-spacing: 3px; }
+  .formularioCentrado, .formularioContacto {
+    margin-left: 5px;
+    margin-top: 20px; }
+    .formularioCentrado .encabezadoChango .encabezadoChango__titulo, .formularioContacto .encabezadoChango .encabezadoChango__titulo {
+      font-size: 22px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      letter-spacing: 3px; }
+    .formularioCentrado .encabezadoChango .encabezadoChango__chango, .formularioContacto .encabezadoChango .encabezadoChango__chango {
+      width: 280px;
+      opacity: 25%;
+      border-radius: 30px; }
+    .formularioCentrado label, .formularioContacto label {
+      font-size: 22px;
+      margin: 2px; }
+    .formularioCentrado select, .formularioContacto select {
+      margin: 2px;
+      font-size: 20px; }
+    .formularioCentrado input, .formularioContacto input {
+      margin: 2px;
+      font-size: 20px; }
+  .card-title {
+    font-size: 25px; } }
+
+@media screen and (max-width: 992px) {
+  .stock {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: "stock__productos1 stock__productos2 stock__productos3 stock__productos4"     "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
+    background-color: whitesmoke; }
+    .stock .stock__img {
+      display: inline-block;
+      text-align: center;
+      margin: 3%;
+      margin-bottom: 60px;
+      margin-top: 50px; }
+      .stock .stock__img h4,
+      .stock .stock__img p {
+        font-size: 18px; }
+    .stock .stock--productosFotos {
+      display: block;
+      width: 190px;
+      height: 140px;
+      margin: 2px;
+      margin-top: 3px;
+      margin-bottom: 8px; }
+  .encabezados,
+  h1 {
+    font-size: 26px; }
+  h2,
+  h4,
+  p {
+    font-size: 22px; }
+  .cuento {
+    width: 90%; }
+    .cuento .cuento__foto {
+      width: 550px;
+      height: 380px;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 20px; }
+    .cuento p {
+      font-size: 22px; }
+  .carousel {
+    margin-left: 10%; }
+    .carousel .carousel-inner {
+      display: block;
+      text-align: center;
+      justify-content: center;
+      margin-left: 10%; }
+      .carousel .carousel-inner .carousel-item__fotoCar {
+        display: block;
+        margin-left: 10%;
+        width: 480px;
+        height: 350px; }
+  .textCar {
+    width: 90%;
+    margin-left: 20%;
+    display: block; }
+    .textCar .textCar__p {
+      font-size: 22px; }
   .formularioContacto label {
     font-size: 22px; }
   .formularioContacto .botonesForm__bottCont {
@@ -721,7 +807,7 @@ footer {
   p {
     font-size: 10px; }
   .log {
-    font-size: 25px;
+    font-size: 15px;
     padding: 2px; }
   .cuento {
     width: 90%; }

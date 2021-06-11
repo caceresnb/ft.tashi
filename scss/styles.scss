@@ -212,11 +212,11 @@ video {
 }
 .encabezadoChango {
     .encabezadoChango__titulo {
-        @include encabezados('Balthazar',$cLetra,30px,5px,5px,3px);
+        @include encabezados('Balthazar',$cLetra,30px,50px,5px,3px);
     }
     .encabezadoChango__chango {
-        margin-top: 80px;
-        margin-bottom: 5px;
+        margin-top: 100px;
+        margin-bottom: 10px;
         width:15%;
         opacity: 25%;
         border-radius: 30px;
@@ -242,6 +242,15 @@ video {
     margin-top: 20px;
     margin-bottom: 100px;
     line-height: 30px;
+    select {
+        font-size: 22px;
+    }
+    label {
+        font-size: 22px;
+    }
+    input {
+        margin: 3px;
+    }
 }
 .formularioContacto {
     @extend .formularioCentrado;
@@ -274,6 +283,8 @@ label {
 .grupoCards {
     margin-top: 50px;
     margin-bottom: 100px;
+    margin-left: 100px;
+    width: 80%;
     .card-img {
         width: 100%;
         opacity: 50%;
@@ -281,15 +292,25 @@ label {
         background-color: $bWhite;
     }
     .text-center {
-        font-family: 'Balthazar', serif;
-        color: $cLetra;
-        font-size: 20px;
-        margin-top:10px;
+        margin-top:8px;
         margin-bottom: 10px;
         padding:10px;
         text-align: center;
         border: 0px;
         line-height: 40px;
+        .card-title {
+            font-size: 22px;
+            line-height: 40px;
+            font-family: 'Balthazar', serif;
+            color: $cLetra;
+            margin-top: 20px;
+        }
+        .card-text {
+            font-size: 20px;
+            margin: 2px;
+            font-family: 'Balthazar', serif;
+            color: $cLetra;
+        }
         .table--stars {
             width: 40%;
             opacity: 40%;
@@ -374,80 +395,63 @@ footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 5px;
-        grid-row-gap: 3px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
         grid-template-areas:"stock__productos1 stock__productos2 stock__productos3 stock__productos4"    
                             "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
         background-color:whitesmoke;
         .stock__img {
             display: inline-block;
             text-align: center;
-            margin: 10%;
+            margin: 3%;
+            margin-bottom: 60px;
+            margin-top: 50px;
+            h4,
+            p {
+                font-size: 18px;
+            }
         }
         .stock--productosFotos {
             display: block;
-            width: 150px;
-            height: 100px;
+            width: 250px;
+            height: 180px;
+            margin: 2px;
+            margin-top: 3px;
+            margin-bottom: 8px;
         }
     }
     .menu {
         nav {
             ul {
-        display: flex;
-        flex-direction: column;
-        align-items: space-around;
-        font-size: 22px;
+                display: flex;
+                flex-direction: column;
+                align-items: space-around;
+                font-size: 26px;
+                li{
+                    margin-left: 1px;
+                    margin-right: 1px;
+                    padding: 2px;
+                    .log {
+                        padding: 0px;
+                        font-size: 40px;
+                    }
+                }
             }
         }
     }
-}
-@media screen and (max-width: 992px) {
-    .stock {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 5px;
-        grid-row-gap: 3px;
-        grid-template-areas:"stock__productos1 stock__productos2 stock__productos3 stock__productos4"    
-                            "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
-        background-color:whitesmoke;
-        .stock__img {
-            display: inline-block;
-            text-align: center;
-            margin: 10%;
-        }
-        .stock--productosFotos {
-            display: block;
-            width: 150px;
-            height: 100px;
-        }
-    }
-    .menu {
-        nav {
-            ul {
-        display: flex;
-        flex-direction: column;
-        align-items: space-around;
-        font-size: 20px;
-            }
-        }
-    }
-    .encabezados {
-        font-size: 20px;
+    .encabezados,
+    h1 {
+        font-size: 26px;
     }
     h1,
     h2,
     h4,
     p {
-        font-size: 24px;
-    }
-    .log {
-        font-size: 37px;
-        padding:2px;
+        font-size: 22px;
     }
     .cuento {
         .cuento__foto {
-            width: 500px;
+            width: 550px;
             height:380px;
             margin-left: 10%;
             margin-right: 10%;
@@ -458,44 +462,202 @@ footer {
         }
         width: 90%;
     }
-    .carousel-inner {
-        display: block;
-        text-align: center;
-        justify-content: center;
-        .carousel-item__fotoCar {
+    .container {
+        margin-left: 5px;
+        .carousel-inner {
             display: block;
-            margin-left: 12%;
-            width: 450px;
-            height: 340px;
+            text-align: center;
+            justify-content: center;
+            margin-left: 10%;
+            .carousel-item__fotoCar {
+                display: block;
+                margin-left: 10%;
+                margin-right: 15%;
+                width: 600px;
+                height: 400px;
+            }
+        }
+        .textCar {
+            p {
+                font-size: 22px;
+            }
+            width: 90%;
+            margin-left: 8%;
         }
     }
-    .textCar {
-        p {
-            font-size: 16px;
+    .formularioContacto {
+        label {
+            font-size: 22px;
         }
-        width: 90%;
-        margin-left: 8%;
+        .botonesForm__bottCont {
+            margin-top: 20px;
+            font-size: 20px;
+        }
     }
     .tituloContacto {
         color:$cLetra;
         font-family: 'Balthazar', serif;
-        font-size: 22px;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        font-size: 28px;
+        margin-top: 10px;
+        margin-bottom: 40px;
         letter-spacing: 3px;
     }
-    .encabezadoChango {
-        .encabezadoChango__titulo {
+    .formularioCentrado {
+        margin-left: 5px;
+        margin-top: 20px;
+        .encabezadoChango {
+            .encabezadoChango__titulo {
+                font-size: 22px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                letter-spacing: 3px;
+            }
+            .encabezadoChango__chango {
+                width: 280px;
+                opacity: 25%;
+                border-radius: 30px;
+            }
+        }
+        label {
             font-size: 22px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            letter-spacing: 3px;
+            margin: 2px;
         }
-        .encabezadoChango__chango {
-            width: 200px;
-            opacity: 25%;
-            border-radius: 30px;
+        select {
+            margin: 2px;
+            font-size: 20px;
         }
+        input {
+            margin: 2px;
+            font-size: 20px;
+        }
+    }
+    .card-title {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .stock {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas:"stock__productos1 stock__productos2 stock__productos3 stock__productos4"    
+                            "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
+        background-color:whitesmoke;
+        .stock__img {
+            display: inline-block;
+            text-align: center;
+            margin: 3%;
+            margin-bottom: 60px;
+            margin-top: 50px;
+            h4,
+            p {
+                font-size: 18px;
+            }
+        }
+        .stock--productosFotos {
+            display: block;
+            width: 190px;
+            height: 140px;
+            margin: 2px;
+            margin-top: 3px;
+            margin-bottom: 8px;
+        }
+    }
+    .encabezados,
+    h1 {
+        font-size: 26px;
+    }
+    h2,
+    h4,
+    p {
+        font-size: 22px;
+    }
+    .cuento {
+        .cuento__foto {
+            width: 550px;
+            height:380px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 22px;
+        }
+        width: 90%;
+    }
+    .carousel{
+        margin-left: 10%;
+        .carousel-inner {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            margin-left: 10%;
+            .carousel-item__fotoCar {
+                display: block;
+                margin-left: 10%;
+                width: 480px;
+                height: 350px;
+            }
+        }
+    }
+    .textCar {
+        .textCar__p {
+            font-size: 22px;
+        }
+        width: 90%;
+        margin-left: 20%;
+        display: block;
+    }
+    .formularioContacto {
+        label {
+            font-size: 22px;
+        }
+        .botonesForm__bottCont {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    }
+    .tituloContacto {
+        color:$cLetra;
+        font-family: 'Balthazar', serif;
+        font-size: 28px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        letter-spacing: 3px;
+    }
+    .formularioCentrado {
+        margin-left: 5px;
+        margin-top: 20px;
+        .encabezadoChango {
+            .encabezadoChango__titulo {
+                font-size: 22px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                letter-spacing: 3px;
+            }
+            .encabezadoChango__chango {
+                width: 280px;
+                opacity: 25%;
+                border-radius: 30px;
+            }
+        }
+        label {
+            font-size: 22px;
+            margin: 2px;
+        }
+        select {
+            margin: 2px;
+            font-size: 20px;
+        }
+        input {
+            margin: 2px;
+            font-size: 20px;
+        }
+    }
+    .card-title {
+        font-size: 25px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -826,7 +988,7 @@ footer {
         font-size: 10px;
     }
     .log {
-        font-size: 25px;
+        font-size: 15px;
         padding: 2px;
     }
     .cuento {
