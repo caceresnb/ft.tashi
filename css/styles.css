@@ -633,7 +633,7 @@ footer {
     margin-left: 10px;
     margin-top: 20px; }
     .formularioCentrado .encabezadoChango .encabezadoChango__titulo, .formularioContacto .encabezadoChango .encabezadoChango__titulo {
-      font-size: 22px;
+      font-size: 20px;
       margin-top: 5px;
       margin-bottom: 5px;
       letter-spacing: 3px; }
@@ -642,7 +642,11 @@ footer {
       opacity: 25%;
       border-radius: 30px; }
     .formularioCentrado label, .formularioContacto label {
-      font-size: 20px; }
+      font-size: 18px; }
+    .formularioCentrado select, .formularioContacto select {
+      font-size: 18px; }
+    .formularioCentrado input, .formularioContacto input {
+      font-size: 18px; }
   .card {
     display: block;
     justify-content: center;

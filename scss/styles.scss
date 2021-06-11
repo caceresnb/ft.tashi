@@ -753,7 +753,7 @@ footer {
         margin-top: 20px;
         .encabezadoChango {
             .encabezadoChango__titulo {
-                font-size: 22px;
+                font-size: 20px;
                 margin-top: 5px;
                 margin-bottom: 5px;
                 letter-spacing: 3px;
@@ -765,7 +765,13 @@ footer {
             }
         }
         label {
-            font-size: 20px;
+            font-size: 18px;
+        }
+        select {
+            font-size: 18px;
+        }
+        input {
+            font-size: 18px;
         }
     }
     .card {
