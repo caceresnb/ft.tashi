@@ -194,13 +194,14 @@ video {
         grid-area: stock__productos8; 
     }
     .stock__img {
-        display: block;
+        display: inline-block;
         align-content: center;
         text-align: center;
         justify-content: center;
         h4,
         p {
-            font-size: 18px;
+            font-size: 22px;
+            margin-top: 10px;
         }
         .stock--productosFotos {
             display: block;
@@ -288,7 +289,8 @@ label {
 .grupoCards {
     margin-top: 50px;
     margin-bottom: 100px;
-    width: 100%;
+    margin-left: 10%;
+    width: 80%;
     .card-img {
         width: 100%;
         opacity: 50%;
@@ -405,10 +407,11 @@ footer {
                             "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
         background-color:whitesmoke;
         .stock__img {
-            display: block;
-            align-content: center;
+            display: inline-block;
             text-align: center;
             justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 100px;
             h4,
             p {
                 font-size: 20px;
@@ -417,7 +420,8 @@ footer {
                 display: block;
                 width: 250px;
                 height: 180px;
-                margin: 2px;
+                margin-left: 2px;
+                margin-right: 2px;
                 margin-top: 3px;
                 margin-bottom: 8px;
             }
@@ -427,16 +431,13 @@ footer {
         nav {
             ul {
                 display: flex;
-                flex-direction: column;
                 align-items: space-around;
-                font-size: 26px;
+                font-size: 28px;
                 li{
-                    margin-left: 1px;
-                    margin-right: 1px;
-                    padding: 2px;
+                    padding: 1px;
                     .log {
                         padding: 0px;
-                        font-size: 40px;
+                        font-size: 45px;
                     }
                 }
             }
@@ -444,7 +445,7 @@ footer {
     }
     .encabezados,
     h1 {
-        font-size: 26px;
+        font-size: 28px;
     }
     h1,
     h2,
@@ -454,41 +455,43 @@ footer {
     }
     .cuento {
         .cuento__foto {
-            width: 550px;
-            height:380px;
+            width: 600px;
+            height:400px;
             margin-left: 10%;
             margin-right: 10%;
             margin-top: 20px;
         }
         p {
-            font-size: 22px;
+            font-size: 24px;
+            margin-left: 5%;
+            margin-right: 5%;
         }
         width: 90%;
     }
     .container {
-        margin-left: 5px;
+        margin-left: 30px;
         .carousel-inner {
-            display: block;
+            display: inline-block;
             text-align: center;
             justify-content: center;
-            margin-left: 10%;
+            margin-left: 5%;
             .carousel-item__fotoCar {
                 display: block;
-                margin-left: 10%;
-                margin-right: 15%;
-                width: 600px;
-                height: 400px;
+                margin-left: 15%;
+                width: 700px;
+                height: 500px;
             }
         }
         .textCar {
             p {
-                font-size: 22px;
+                font-size: 24px;
             }
             width: 90%;
-            margin-left: 8%;
+            margin-left: 5%;
         }
     }
     .formularioContacto {
+        width: 100%;
         label {
             font-size: 22px;
         }
@@ -510,7 +513,7 @@ footer {
         margin-top: 20px;
         .encabezadoChango {
             .encabezadoChango__titulo {
-                font-size: 22px;
+                font-size: 26px;
                 margin-top: 5px;
                 margin-bottom: 5px;
                 letter-spacing: 3px;
@@ -521,144 +524,51 @@ footer {
                 border-radius: 30px;
             }
         }
+        line-height: 40px;
         label {
-            font-size: 22px;
-            margin: 2px;
+            font-size: 24px;
+            margin: 5px;
         }
         select {
-            margin: 2px;
-            font-size: 20px;
+            margin: 5px;
+            font-size: 22px;
         }
         input {
-            margin: 2px;
-            font-size: 20px;
-        }
-    }
-    .card-title {
-        font-size: 25px;
-    }
-}
-@media screen and (max-width: 992px) {
-    .stock {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        grid-template-areas:"stock__productos1 stock__productos2 stock__productos3 stock__productos4"    
-                            "stock__productos5 stock__productos6 stock__productos7 stock__productos8";
-        background-color:whitesmoke;
-        .stock__img {
-            display: block;
-            align-content: center;
-            text-align: center;
-            justify-content: center;
-            h4,
-            p {
-                font-size: 18px;
-            }
-            .stock--productosFotos {
-                display: block;
-                width: 190px;
-                height: 140px;
-                margin: 2px;
-                margin-top: 3px;
-                margin-bottom: 8px;
-            }
-    }
-    .encabezados,
-    h1 {
-        font-size: 26px;
-    }
-    h2,
-    h4,
-    p {
-        font-size: 22px;
-    }
-    .cuento {
-        .cuento__foto {
-            width: 550px;
-            height:380px;
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-top: 20px;
-        }
-        p {
+            margin: 5px;
             font-size: 22px;
         }
-        width: 90%;
     }
-    .carousel{
-        margin-left: 10%;
-        .carousel-inner {
-            display: block;
-            text-align: center;
-            justify-content: center;
-            margin-left: 10%;
-            .carousel-item__fotoCar {
-                display: block;
-                margin-left: 10%;
-                width: 480px;
-                height: 350px;
-            }
-        }
-    }
-    .textCar {
-        .textCar__p {
-            font-size: 22px;
-        }
-        width: 90%;
-        margin-left: 20%;
+    .card {
         display: block;
-    }
-    .formularioContacto {
-        label {
-            font-size: 22px;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-left: 3%;
+        .card-img {
+            width: 100%;
         }
-        .botonesForm__bottCont {
-            margin-top: 20px;
-            font-size: 20px;
-        }
-    }
-    .tituloContacto {
-        color:$cLetra;
-        font-family: 'Balthazar', serif;
-        font-size: 28px;
-        margin-top: 10px;
-        margin-bottom: 40px;
-        letter-spacing: 3px;
-    }
-    .formularioCentrado {
-        margin-left: 5px;
-        margin-top: 20px;
-        .encabezadoChango {
-            .encabezadoChango__titulo {
-                font-size: 22px;
-                margin-top: 5px;
-                margin-bottom: 5px;
-                letter-spacing: 3px;
+        .text-center {
+            font-family: 'Balthazar', serif;
+            color: $cLetra;
+            margin: 1%;
+            text-align: center;
+            justify-self: center;
+            border: 0px;
+            .card-text {
+                font-size: 20px;
+                line-height: 25px;
             }
-            .encabezadoChango__chango {
-                width: 280px;
-                opacity: 25%;
-                border-radius: 30px;
+            .card-title {
+                font-size: 25px;
+                margin: 3px;
             }
         }
-        label {
-            font-size: 22px;
-            margin: 2px;
+        .table--stars {
+                width: 60%;
+                opacity: 40%;
+                border-radius: 2px;
+                margin: 8px;
         }
-        select {
-            margin: 2px;
-            font-size: 20px;
-        }
-        input {
-            margin: 2px;
-            font-size: 20px;
-        }
-    }
-    .card-title {
-        font-size: 25px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -674,21 +584,22 @@ footer {
                             "stock__productos7 stock__productos8";
         background-color:whitesmoke;
         .stock__img {
-            display: block;
+            display: inline-block;
             align-content: center;
             text-align: center;
             justify-content: center;
-            h4,
+            h4 {
+                padding: 10px;
+            }
             p {
-                font-size: 18px;
+                font-size: 20px;
             }
             .stock--productosFotos {
                 display: block;
-                width: 190px;
-                height: 140px;
-                margin: 2px;
-                margin-top: 3px;
-                margin-bottom: 8px;
+                width: 250px;
+                height: 200px;
+                margin-left: 1px;
+                margin-right: 5px;
             }
         }
     }
@@ -698,22 +609,21 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: space-around;
-        font-size: 24px;
+        font-size: 28px;
             }
         }
     }
+    .log {
+        font-size: 40px;
+    }
     .encabezados,
     h1 {
-        font-size: 26px;
+        font-size: 22px;
     }
     h2,
     h4,
     p {
         font-size: 20px;
-    }
-    .log {
-        font-size: 35px;
-        padding:2px;
     }
     .cuento {
         .cuento__foto {
@@ -728,25 +638,28 @@ footer {
         }
         width: 90%;
     }
-    .carousel-inner {
-        display: block;
-        text-align: center;
-        justify-content: center;
-        margin-left: 10%;
-        .carousel-item__fotoCar {
-            display: block;
+    .container {
+        margin-left: 10px;
+        .carousel-inner {
+            display: inline-block;
+            text-align: center;
+            justify-content: center;
+            margin-left: 5%;
+            .carousel-item__fotoCar {
+                display: block;
+                margin-left: 10%;
+                width: 500px;
+                height: 400px;
+            }
+        }
+        .textCar {
+            p {
+                font-size: 18px;
+                margin-left: 5px;
+            }
+            width: 80%;
             margin-left: 10%;
-            width: 450px;
-            height: 300px;
         }
-    }
-    .textCar {
-        p {
-            font-size: 20px;
-            margin-left: 5px;
-        }
-        width: 90%;
-        margin-left: 8%;
     }
     .tituloContacto {
         color:$cLetra;
@@ -783,35 +696,42 @@ footer {
             font-size: 18px;
         }
     }
-    .card {
-        display: block;
-        justify-content: center;
-        text-align: center;
+    .grupoCards {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        margin-left: 1%;
         width: 100%;
-        margin-left: 3%;
         .card-img {
             width: 100%;
+            opacity: 50%;
+            border-radius: 5px;
+            background-color: $bWhite;
         }
         .text-center {
-            font-family: 'Balthazar', serif;
-            color: $cLetra;
-            margin: 1%;
+            margin-top:1px;
+            margin-bottom: 1px;
+            padding: 2px;
             text-align: center;
-            justify-self: center;
             border: 0px;
+            line-height: 15px;
+            .card-title {
+                font-size: 18px;
+                line-height: 10px;
+                font-family: 'Balthazar', serif;
+                color: $cLetra;
+                margin-top: 10px;
+            }
             .card-text {
                 font-size: 16px;
-                line-height: 2px;
+                margin: 2px;
+                font-family: 'Balthazar', serif;
+                color: $cLetra;
             }
-            .card-title {
-                font-size: 20px;
-            }
-        }
-        .table--stars {
+            .table--stars {
                 width: 30%;
                 opacity: 40%;
-                border-radius: 2px;
-                margin: 10px;
+                border-radius: 1px;
+            }        
         }
     }
     .redes--red {
@@ -1088,10 +1008,10 @@ footer {
         display: block;
         justify-content: center;
         text-align: center;
-        width: 70%;
+        width: 60%;
         margin-left: 15%;
         .card-img {
-            width: 100%;
+            width: 70%;
         }
         .text-center {
             font-family: 'Balthazar', serif;
@@ -1117,8 +1037,5 @@ footer {
                 margin: 1px;
             }
         }
-    }
-    .redes--red {
-        margin-top: 50px;
     }
 }
