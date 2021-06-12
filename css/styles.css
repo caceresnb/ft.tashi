@@ -151,8 +151,7 @@ video {
     grid-area: stock__productos8; }
   .stock .stock__img {
     display: block;
-    text-align: center;
-    align-self: center; }
+    text-align: center; }
   .stock .stock--productosFotos {
     display: block;
     margin-top: 60px;
@@ -233,8 +232,7 @@ label {
 .grupoCards {
   margin-top: 50px;
   margin-bottom: 100px;
-  margin-left: 100px;
-  width: 80%; }
+  width: 100%; }
   .grupoCards .card-img {
     width: 100%;
     opacity: 50%;
@@ -680,33 +678,34 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 5px;
+    grid-column-gap: 3px;
     grid-row-gap: 3px;
     grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4" "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
     background-color: whitesmoke; }
     .stock .stock__img {
-      display: inline-block;
+      display: block;
       text-align: center;
       margin: 8%; }
-    .stock .stock--productosFotos {
-      display: block;
-      width: 150px;
-      height: 100px; }
+      .stock .stock__img .stock--productosFotos {
+        display: block;
+        width: 150px;
+        height: 100px; }
   .menu nav ul {
     display: flex;
     flex-direction: column;
     align-items: space-around;
     font-size: 18px; }
-  .encabezados {
+    .menu nav ul li .log {
+      font-size: 25px;
+      padding: 2px; }
+  .encabezados,
+  h1 {
     font-size: 16px; }
   h2,
   h4,
   h5,
   p {
     font-size: 13px; }
-  .log {
-    font-size: 30px;
-    padding: 2px; }
   .cuento {
     width: 90%; }
     .cuento .cuento__foto {
@@ -762,21 +761,23 @@ footer {
     .card .text-center {
       font-family: 'Balthazar', serif;
       color: #3d3f3ff3;
-      margin: 3%;
       text-align: center;
       justify-self: center;
       border: 0px;
       line-height: 7px; }
       .card .text-center .card-text {
+        margin: 2px;
         font-size: 14px;
-        line-height: 5px; }
+        line-height: 20px; }
       .card .text-center .card-title {
-        font-size: 16px; }
+        font-size: 16px;
+        margin-top: 1px;
+        margin-bottom: 2px; }
     .card .table--stars {
       width: 8%;
       opacity: 40%;
-      border-radius: 4px;
-      margin: 8px; }
+      border-radius: 2px;
+      margin: 1px; }
   .redes--red {
     margin-top: 50px; } }
 
