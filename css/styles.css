@@ -635,13 +635,13 @@ footer {
     grid-template-areas: "stock__productos1 stock__productos2"     "stock__productos3 stock__productos4" "stock__productos5 stock__productos6" "stock__productos7 stock__productos8";
     background-color: whitesmoke; }
     .stock .stock__img {
-      display: block;
+      display: inline-block;
       align-content: center;
       text-align: center;
       justify-content: center; }
       .stock .stock__img h4,
       .stock .stock__img p {
-        font-size: 18px; }
+        font-size: 16px; }
       .stock .stock__img .stock--productosFotos {
         display: block;
         width: 190px;
@@ -659,12 +659,12 @@ footer {
       padding: 2px; }
   .encabezados,
   h1 {
-    font-size: 16px; }
+    font-size: 18px; }
   h2,
   h4,
   h5,
   p {
-    font-size: 13px; }
+    font-size: 16px; }
   .cuento {
     width: 90%; }
     .cuento .cuento__foto {
@@ -674,20 +674,36 @@ footer {
       margin-right: 5%; }
     .cuento p {
       font-size: 14px; }
-  .textCar {
-    width: 90%; }
-    .textCar p {
-      font-size: 14px; }
-  .carousel-inner {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    margin-left: 5%; }
-    .carousel-inner .carousel-item__fotoCar {
-      display: block;
-      margin-left: 15%;
-      width: 290px;
-      height: 200px; }
+  .formularioContacto {
+    width: 100%;
+    margin: 1%; }
+    .formularioContacto .tituloContacto {
+      font-size: 16px;
+      margin: 2px; }
+    .formularioContacto label {
+      font-size: 16px; }
+    .formularioContacto .botonesForm__bottCont {
+      margin-top: 20px;
+      font-size: 16px; }
+  .container {
+    margin-left: 8px; }
+    .container .carousel-inner {
+      display: inline-block;
+      text-align: center;
+      justify-content: center;
+      margin-left: 7%; }
+      .container .carousel-inner .carousel-item__fotoCar {
+        display: block;
+        margin-left: 5%;
+        width: 350px;
+        height: 250px; }
+    .container .textCar {
+      width: 80%;
+      margin-left: 7%;
+      margin-top: 3px; }
+      .container .textCar p {
+        font-size: 14px;
+        margin-left: 5px; }
   .tituloContacto {
     color: #e7e9eb;
     font-family: 'Balthazar', serif;
@@ -697,7 +713,7 @@ footer {
     letter-spacing: 3px; }
   .formularioCentrado, .formularioContacto {
     display: block;
-    margin: 2%; }
+    margin: 10%; }
     .formularioCentrado .encabezadoChango .encabezadoChango__titulo, .formularioContacto .encabezadoChango .encabezadoChango__titulo {
       font-size: 18px;
       margin-top: 30px;
@@ -706,15 +722,19 @@ footer {
     .formularioCentrado .encabezadoChango .encabezadoChango__chango, .formularioContacto .encabezadoChango .encabezadoChango__chango {
       width: 170px;
       opacity: 25%;
-      border-radius: 30px; }
+      border-radius: 30px;
+      margin: 10px; }
+    .formularioCentrado label, .formularioContacto label, .formularioCentrado input, .formularioContacto input, .formularioCentrado select, .formularioContacto select {
+      font-size: 16px;
+      margin: 5px; }
   .drop {
     font-size: 16px; }
   .card {
     display: block;
     justify-content: center;
     text-align: center;
-    width: 70%;
-    margin-left: 15%; }
+    width: 80%;
+    margin-left: 10%; }
     .card .card-img {
       width: 100%; }
     .card .text-center {
@@ -726,17 +746,17 @@ footer {
       line-height: 7px; }
       .card .text-center .card-text {
         margin: 2px;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 20px; }
       .card .text-center .card-title {
-        font-size: 16px;
-        margin-top: 1px;
-        margin-bottom: 2px; }
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px; }
       .card .text-center .table--stars {
-        width: 8%;
+        width: 30%;
         opacity: 40%;
         border-radius: 2px;
-        margin: 1px; }
+        margin: 5px; }
   .redes--red {
     margin-top: 50px; } }
 
