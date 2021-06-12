@@ -751,13 +751,13 @@ footer {
                             "stock__productos7 stock__productos8";
         background-color:whitesmoke;
         .stock__img {
-            display: block;
+            display: inline-block;
             align-content: center;
             text-align: center;
             justify-content: center;
             h4,
             p {
-                font-size: 18px;
+                font-size: 16px;
             }
             .stock--productosFotos {
                 display: block;
@@ -787,13 +787,13 @@ footer {
     }
     .encabezados,
     h1 {
-        font-size: 16px;
+        font-size: 18px;
     }
     h2,
     h4,
     h5,
     p {
-        font-size: 13px;
+        font-size: 16px;
     }
     .cuento {
         .cuento__foto {
@@ -807,22 +807,43 @@ footer {
         }
         width: 90%;
     }
-    .textCar {
-        width: 90%;
-        p {
-            font-size: 14px;
+    .formularioContacto {
+        width: 100%;
+        margin: 1%;
+        .tituloContacto {
+            font-size: 16px;
+            margin: 2px;
+        }
+        label {
+            font-size: 16px;
+        }
+        .botonesForm__bottCont {
+            margin-top: 20px;
+            font-size: 16px;
         }
     }
-    .carousel-inner {
-        display: block;
-        text-align: center;
-        justify-content: center;
-        margin-left: 5%;
-        .carousel-item__fotoCar {
-            display: block;
-            margin-left: 15%;
-            width: 290px;
-            height: 200px;
+    .container {
+        margin-left: 8px;
+        .carousel-inner {
+            display: inline-block;
+            text-align: center;
+            justify-content: center;
+            margin-left: 7%;
+            .carousel-item__fotoCar {
+                display: block;
+                margin-left: 5%;
+                width: 350px;
+                height: 250px;
+            }
+        }
+        .textCar {
+            p {
+                font-size: 14px;
+                margin-left: 5px;
+            }
+            width: 80%;
+            margin-left: 7%;
+            margin-top: 3px;
         }
     }
     .tituloContacto {
@@ -835,7 +856,7 @@ footer {
     }
     .formularioCentrado {
         display: block;
-        margin: 2%;
+        margin: 10%;
         .encabezadoChango {
             .encabezadoChango__titulo {
                 font-size: 18px;
@@ -847,7 +868,14 @@ footer {
                 width: 170px;
                 opacity: 25%;
                 border-radius: 30px;
+                margin: 10px;
             }
+        }
+        label,
+        input,
+        select {
+            font-size: 16px;
+            margin: 5px;
         }
     }
     .drop {
@@ -857,8 +885,8 @@ footer {
         display: block;
         justify-content: center;
         text-align: center;
-        width: 70%;
-        margin-left: 15%;
+        width: 80%;
+        margin-left: 10%;
         .card-img {
             width: 100%;
         }
@@ -871,19 +899,19 @@ footer {
             line-height: 7px;
             .card-text {
                 margin: 2px;
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 20px;
             }
             .card-title {
-                font-size: 16px;
-                margin-top: 1px;
-                margin-bottom: 2px;
+                font-size: 18px;
+                margin-top: 20px;
+                margin-bottom: 10px;
             }
             .table--stars {
-                width: 8%;
+                width: 30%;
                 opacity: 40%;
                 border-radius: 2px;
-                margin: 1px;
+                margin: 5px;
             }
         }
     }  
@@ -904,21 +932,19 @@ footer {
                             "stock__productos7 stock__productos8";
         background-color:whitesmoke;
         .stock__img {
-            display: block;
+            display: inline-block;
             align-content: center;
             text-align: center;
             justify-content: center;
             h4,
             p {
-                font-size: 18px;
+                font-size: 10px;
+                margin: 2px;
             }
             .stock--productosFotos {
                 display: block;
-                width: 190px;
-                height: 140px;
-                margin: 2px;
-                margin-top: 3px;
-                margin-bottom: 8px;
+                width: 130px;
+                height: 80px;
             }
         }
     }
@@ -958,22 +984,26 @@ footer {
         }
         width: 90%;
     }
-    .textCar {
-        width: 90%;
-        p {
-            font-size: 12px;
+    .container {
+        margin-left: 5px;
+        margin-top: 1px;
+        .carousel-inner {
+            display: inline-block;
+            text-align: center;
+            justify-content: center;
+            margin-left: 4%;
+            .carousel-item__fotoCar {
+                display: block;
+                margin-left: 12%;
+                width: 200px;
+                height: 150px;
+            }
         }
-    }
-    .carousel-inner {
-        display: block;
-        text-align: center;
-        justify-content: center;
-        .carousel-item__fotoCar {
-            display: block;
-            margin-left: 10%;
-            margin-top: 30px;
-            width: 200px;
-            height: 160px;
+        .textCar {
+            width: 85%;
+            p {
+                font-size: 12px;
+            }
         }
     }
     .tituloContacto {
@@ -995,9 +1025,10 @@ footer {
                 letter-spacing: 3px;
             }
             .encabezadoChango__chango {
-                width: 100px;
+                width: 130px;
                 opacity: 25%;
                 border-radius: 30px;
+                margin-bottom: 5px;
             }
         }
     }
@@ -1008,10 +1039,10 @@ footer {
         display: block;
         justify-content: center;
         text-align: center;
-        width: 60%;
-        margin-left: 15%;
+        width: 90%;
+        margin-left: 3%;
         .card-img {
-            width: 70%;
+            width: 100%;
         }
         .text-center {
             font-family: 'Balthazar', serif;
@@ -1019,19 +1050,19 @@ footer {
             text-align: center;
             justify-self: center;
             border: 0px;
-            line-height: 7px;
+            line-height: 5px;
             .card-text {
                 margin: 2px;
                 font-size: 14px;
-                line-height: 20px;
+                line-height: 15px;
             }
             .card-title {
                 font-size: 16px;
-                margin-top: 1px;
-                margin-bottom: 2px;
+                margin-top: 5px;
+                margin-bottom: 5px;
             }
             .table--stars {
-                width: 8%;
+                width: 40%;
                 opacity: 40%;
                 border-radius: 2px;
                 margin: 1px;
