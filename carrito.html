@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="mi-archivo.js"></script>
+    <script src="productos.js"></script>
+    <script src="carrito.js"></script>
     <title>Mouette - Tu Pedido Online</title>
 </head>
 <body>
@@ -64,23 +67,9 @@
                 <h1 class="encabezadoChango__titulo">Encargue su pedido online:</h1>
                 <img class="encabezadoChango__chango" src="img/carrito nene.jpg"alt="carrito">
             </div>
-            <form class="pedidosOnline"action= "contacto.php" method="get">
-                <label class="form-label" for="Producto">Producto</label>
-                <select class="drop" name="Producto"> 
-                    <option>...</option>
-                    <option>Pan de Masa Madre</option>
-                    <option>Pan de Masamadre con Nueces</option>
-                    <option>Croissant</option>
-                    <option>Pain au chocolat</option>
-                    <option>Medialunas</option>
-                    <option>Cinnamon Rolls</option>
-                    <option>Rolls de Queso y Lomito</option>
-                    <option>Alfajor con Baño de Chocolate y Nuez</option>
-                </select>
-                <label class="form-label"for="Cantidad">Cantidad:</label><input class="short input" type="numbers" value="" required>
-                <hr>
-                <label class="form-label"for="Producto">Producto</label>
-                <select class="drop"name="Producto">
+            <form id=formulario class="pedidosOnline"action= "contacto.php" method="get">
+                <label class="form-label" for="Producto">Productos:</label>
+                <select id= "producto" name="Producto">
                     <option>...</option>
                     <option>Pan de Masa Madre</option>
                     <option>Pan de Masamadre con Nueces</option>
@@ -91,66 +80,10 @@
                     <option>Rolls de Queso y Lomito</option>
                     <option>Alfajor con Baño de Chocolate y Nuez</option>>
                 </select>
-                <label class="form-label"for="Cantidad">Cantidad:</label><input class="short input"type="numbers" value="" required>
+                <label class="form-label"for="Cantidad">Cantidad:</label><input id="cantidad"type="number" value="" required>
                 <hr>
-                <label class="form-label" for="Producto">Producto</label>
-                <select class="drop" name="Producto">
-                    <option>...</option>
-                    <option>Pan de Masa Madre</option>
-                    <option>Pan de Masamadre con Nueces</option>
-                    <option>Croissant</option>
-                    <option>Pain au chocolat</option>
-                    <option>Medialunas</option>
-                    <option>Cinnamon Rolls</option>
-                    <option>Rolls de Queso y Lomito</option>
-                    <option>Alfajor con Baño de Chocolate y Nuez</option>
-                </select>
-                <label class="form-label"for="Cantidad">Cantidad:</label><input class="short input"type="numbers" value="" required>
-                <hr>
-                <label class="form-label"for="Producto">Producto</label>
-                <select class="drop"name="Producto">
-                    <option>...</option>
-                    <option>Pan de Masa Madre</option>
-                    <option>Pan de Masamadre con Nueces</option>
-                    <option>Croissant</option>
-                    <option>Pain au chocolat</option>
-                    <option>Medialunas</option>
-                    <option>Cinnamon Rolls</option>
-                    <option>Rolls de Queso y Lomito</option>
-                    <option>Alfajor con Baño de Chocolate y Nuez</option>
-                </select>
-                <label class="form-label"for="Cantidad">Cantidad:</label><input class="short input"type="numbers" value="" required>
-                <hr>
-                <label class="form-label" for="Producto">Producto</label>
-                <select class="drop"name="Producto"> 
-                    <option>...</option>
-                    <option>Pan de Masa Madre</option>
-                    <option>Pan de Masamadre con Nueces</option>
-                    <option>Croissant</option>
-                    <option>Pain au chocolat</option>
-                    <option>Medialunas</option>
-                    <option>Cinnamon Rolls</option>
-                    <option>Rolls de Queso y Lomito</option>
-                    <option>Alfajor con Baño de Chocolate y Nuez</option>
-                </select>
-                <label class="form-label"for="Cantidad">Cantidad:</label><input class="short input" type="numbers" value="" required>
-                <hr>
-                <label class="form-label" for="Producto">Producto</label>
-                <select class="drop"name="Producto"> 
-                    <option>...</option>
-                    <option>Pan de Masa Madre</option>
-                    <option>Pan de Masamadre con Nueces</option>
-                    <option>Croissant</option>
-                    <option>Pain au chocolat</option>
-                    <option>Medialunas</option>
-                    <option>Cinnamon Rolls</option>
-                    <option>Rolls de Queso y Lomito</option>
-                    <option>Alfajor con Baño de Chocolate y Nuez</option>
-                </select>
-                <label class="form-label"for="Cantidad">Cantidad:</label><input class="short input" type="numbers" value="" required>
-                <hr>
-                <label class="form-label"for="Producto">Producto</label>
-                <select class="drop"name="Producto">
+                <label class="form-label" for="Producto">Productos:</label>
+                <select id= "producto"name="Producto">
                     <option>...</option>
                     <option>Pan de Masa Madre</option>
                     <option>Pan de Masamadre con Nueces</option>
@@ -161,10 +94,10 @@
                     <option>Rolls de Queso y Lomito</option>
                     <option>Alfajor con Baño de Chocolate y Nuez</option>>
                 </select>
-                <label class="form-label"for="Cantidad">Cantidad:</label><input class="short input"type="numbers" value="" required>
+                <label class="form-label"for="Cantidad">Cantidad:</label><input id="cantidad"type="number" value="" required>
                 <hr>
-                <label class="form-label"for="Producto">Producto</label>
-                <select class="drop"name="Producto">
+                <label class="form-label" for="Producto">Productos:</label>
+                <select id= "producto"name="Producto">
                     <option>...</option>
                     <option>Pan de Masa Madre</option>
                     <option>Pan de Masamadre con Nueces</option>
@@ -175,10 +108,10 @@
                     <option>Rolls de Queso y Lomito</option>
                     <option>Alfajor con Baño de Chocolate y Nuez</option>>
                 </select>
-                <label class="form-label"for="Cantidad">Cantidad:</label><input class="short input"type="numbers" value="" required>
+                <label class="form-label"for="Cantidad">Cantidad:</label><input id="cantidad"type="number" value="" required>
                 <hr>
-                <label class="form-label"for="Producto">Producto</label>
-                <select class="drop"name="Producto">
+                <label class="form-label" for="Producto">Productos:</label>
+                <select id= "producto"name="Producto">
                     <option>...</option>
                     <option>Pan de Masa Madre</option>
                     <option>Pan de Masamadre con Nueces</option>
@@ -189,15 +122,65 @@
                     <option>Rolls de Queso y Lomito</option>
                     <option>Alfajor con Baño de Chocolate y Nuez</option>>
                 </select>
-                <label class="form-label"for="Cantidad">Cantidad:</label><input class="short input"type="numbers" value="" required>
+                <label class="form-label"for="Cantidad">Cantidad:</label><input id="cantidad"type="number" value="" required>
                 <hr>
-                <div class="para768">
-                    <p><label class="form-label" for="Nombre completo">Nombre Completo:</label><input class="other"type="text" value="" required></p>
-                    <p><label  class="form-label"for="Domicilio">Domicilio de Entrega:</label><input class="other"type="text" value="Aclarar Código Postal Por Favor" required></p>
-                    <p><label class="form-label"for="Horario">Franja Horaria---></label><label>9hs-13hs</label><input type="checkbox" name="mañana"><label>15hs-20hs</label><input type="checkbox" name="tarde"></p>
-                    <p><label class="form-label" for="Cantidad">Te contactará un representante!</label><input class="other"type="text" value="E-mail y/o Teléfono" required></p>
-                    <button class="compraNo" type="reset"><img class="carrito" src="img/118044.jpg" hspace="30" alt="imagen" width="32" heigth="32" style="vertical-align_middle"><button class="compraSi" type="submit"><img class="carrito" src="img/118042.jpg" hspace="30" alt="imagen" width="32" heigth="32" style="vertical-align_middle">
-                </div>
+                <label class="form-label" for="Producto">Productos:</label>
+                <select id= "producto" name="Producto">
+                    <option>...</option>
+                    <option>Pan de Masa Madre</option>
+                    <option>Pan de Masamadre con Nueces</option>
+                    <option>Croissant</option>
+                    <option>Pain au chocolat</option>
+                    <option>Medialunas</option>
+                    <option>Cinnamon Rolls</option>
+                    <option>Rolls de Queso y Lomito</option>
+                    <option>Alfajor con Baño de Chocolate y Nuez</option>>
+                </select>
+                <label class="form-label"for="Cantidad">Cantidad:</label><input id="cantidad"type="number" value="" required>
+                <hr>
+                <label class="form-label" for="Producto">Productos:</label>
+                <select id= "producto" name="Producto">
+                    <option>...</option>
+                    <option>Pan de Masa Madre</option>
+                    <option>Pan de Masamadre con Nueces</option>
+                    <option>Croissant</option>
+                    <option>Pain au chocolat</option>
+                    <option>Medialunas</option>
+                    <option>Cinnamon Rolls</option>
+                    <option>Rolls de Queso y Lomito</option>
+                    <option>Alfajor con Baño de Chocolate y Nuez</option>>
+                </select>
+                <label class="form-label"for="Cantidad">Cantidad:</label><input id="cantidad"type="number" value="" required>
+                <hr>
+                <label class="form-label" for="Producto">Productos:</label>
+                <select id= "producto" name="Producto">
+                    <option>...</option>
+                    <option>Pan de Masa Madre</option>
+                    <option>Pan de Masamadre con Nueces</option>
+                    <option>Croissant</option>
+                    <option>Pain au chocolat</option>
+                    <option>Medialunas</option>
+                    <option>Cinnamon Rolls</option>
+                    <option>Rolls de Queso y Lomito</option>
+                    <option>Alfajor con Baño de Chocolate y Nuez</option>>
+                </select>
+                <label class="form-label"for="Cantidad">Cantidad:</label><input id="cantidad"type="number" value="" required>
+                <hr>
+                <label class="form-label" for="Producto">Productos:</label>
+                <select id= "producto" name="Producto" type= text>
+                    <option>...</option>
+                    <option>Pan de Masa Madre</option>
+                    <option>Pan de Masamadre con Nueces</option>
+                    <option>Croissant</option>
+                    <option>Pain au chocolat</option>
+                    <option>Medialunas</option>
+                    <option>Cinnamon Rolls</option>
+                    <option>Rolls de Queso y Lomito</option>
+                    <option>Alfajor con Baño de Chocolate y Nuez</option>>
+                </select>
+                <label class="form-label"for="Cantidad">Cantidad:</label><input id="cantidad"type="number" value="" required>
+                <hr>
+                <button class="compraNo" type="reset"><img class="carrito" src="img/118044.jpg" hspace="30" alt="imagen" width="32" heigth="32" style="vertical-align_middle"><button class="compraSi" type="submit" value="Enviar"><img class="carrito" src="img/118042.jpg" hspace="30" alt="imagen" width="32" heigth="32" style="vertical-align_middle">
             </form>
         </div>
     </main>
@@ -205,7 +188,7 @@
         <div class="redes"> 
             <a class="redes__w"href="https://web.whatsapp.com/"target="_blank"><img class="redes--red"src="img/whats.jpg"alt="whatsapp"></a><a class="redes__f"href="https://www.facebook.com/"target="_blank"><img class="redes--red"src="img/face.jpg"alt="facebook"></a><a class="redes__i"href="https://www.instagram.com/?hl=es-la"target="_blank"><img class="redes--red" src="img/ig.jpg" alt="instagram"></a>
             <p class="footerP">
-                Mouette & Co® - Marca registrada
+                Ojalá Webs® - Copyright
             </p>
         </div>
     </footer>
